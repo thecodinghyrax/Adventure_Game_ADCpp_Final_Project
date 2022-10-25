@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mock_title.jpg</file>
+        <file>mockCamp.jpg</file>
+        <file>questPanel.jpg</file>
+        <file>compass.jpg</file>
+        <file>compass.png</file>
+    </qresource>
+</RCC>

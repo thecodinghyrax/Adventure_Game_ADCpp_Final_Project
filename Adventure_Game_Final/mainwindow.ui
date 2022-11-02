@@ -42,7 +42,7 @@ background-color: rgb(0, 0, 0);</string>
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="page">
+    <widget class="QWidget" name="titleScreen">
      <widget class="QLabel" name="titleLabel">
       <property name="geometry">
        <rect>
@@ -99,8 +99,8 @@ border-radius: 10px;</string>
      <zorder>titleLabel</zorder>
      <zorder>pushButton</zorder>
     </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QLabel" name="label_2">
+    <widget class="QWidget" name="gameScreen">
+     <widget class="QLabel" name="bkgLabel">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -138,7 +138,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>370</x>
         <y>380</y>
         <width>81</width>
         <height>41</height>
@@ -165,7 +165,7 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>370</x>
         <y>500</y>
         <width>91</width>
         <height>41</height>
@@ -192,7 +192,7 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="pushButton_4">
       <property name="geometry">
        <rect>
-        <x>430</x>
+        <x>450</x>
         <y>440</y>
         <width>81</width>
         <height>41</height>
@@ -219,7 +219,7 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>280</x>
         <y>440</y>
         <width>81</width>
         <height>41</height>
@@ -300,7 +300,7 @@ color: rgb(0, 0, 0);</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>370</x>
         <y>420</y>
         <width>81</width>
         <height>81</height>
@@ -374,7 +374,7 @@ color: rgb(0, 0, 0);</string>
        <string>Quit</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="descLabel">
       <property name="geometry">
        <rect>
         <x>100</x>

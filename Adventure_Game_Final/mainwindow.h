@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "scene.h"
+#include "map.h"
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,11 +17,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void createScene();
+    void renderScene(Scene);
 
 private slots:
     void on_pushButton_clicked();
 
+
 private:
     Ui::MainWindow *ui;
+    std::vector<Scene> scenes;
+
 };
 #endif // MAINWINDOW_H

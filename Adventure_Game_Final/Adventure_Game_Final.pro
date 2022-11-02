@@ -13,13 +13,15 @@ SOURCES += \
     enemy.cpp \
     main.cpp \
     mainwindow.cpp \
-    map.cpp
+    map.cpp \
+    scene.cpp
 
 HEADERS += \
     area.h \
     enemy.h \
     mainwindow.h \
-    map.h
+    map.h \
+    scene.h
 
 FORMS += \
     mainwindow.ui

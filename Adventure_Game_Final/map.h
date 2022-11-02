@@ -6,6 +6,7 @@ class Map
 private:
     // Vector containing the game's areas
     std::vector<Area> mapData;
+
     Area getAreaById(std::string id);
     std::vector<Area> getMapData();
 public:

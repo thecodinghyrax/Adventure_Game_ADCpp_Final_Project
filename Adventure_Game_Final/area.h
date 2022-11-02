@@ -38,6 +38,6 @@ public:
     std::string getSouthArea(){return southArea;}
     std::string getWestArea(){return westArea;}
 
-    // Enemy createEnemy();
+    Enemy createEnemy();
 
 };

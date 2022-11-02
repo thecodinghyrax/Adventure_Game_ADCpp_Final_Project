@@ -3,7 +3,7 @@
 
 
 // Returns a game area from an ID
-// Returns a new area with an ID of 0 to designate no area being found
+// Returns an area with an ID of 0 if no area is found
 Area Map::getAreaById(std::string id){
     for (int i = 0; i < mapData.size(); i++){
         if (mapData[i].getId() == id){

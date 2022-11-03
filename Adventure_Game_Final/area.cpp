@@ -1,6 +1,42 @@
-#include "area.h"
+﻿#include "area.h"
 #include <ctime>
 
+
+Area::Area(){
+
+};
+
+void Area::setId(std::string id){
+    this->id = id;
+};
+void Area::setName(std::string name){
+    this->name = name;
+};
+void Area::setText(std::string text){
+    this->text = text;
+};
+void Area::setSearchResult(std::string searchResults){
+    this->searchResults = searchResults;
+};
+void Area::setBackgroundFile(std::string backgroundFile){
+    this->backgroundFile = backgroundFile;
+};
+
+void Area::setNorthArea(std::string northArea){
+    this->northArea = northArea;
+};
+void Area::setEastArea(std::string eastArea){
+    this->eastArea = eastArea;
+};
+void Area::setSouthArea(std::string southArea){
+    this->southArea = southArea;
+};
+void Area::setWestArea(std::string westArea){
+    this->westArea = westArea;
+};
+Area::Area(std::string id){
+    this->id = id;
+};
 // Returns a random enemy from an area's vector of enemies
 Enemy Area::createEnemy(){
     if (hasEnemies()){

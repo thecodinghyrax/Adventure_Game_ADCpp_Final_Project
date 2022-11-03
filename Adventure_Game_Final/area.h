@@ -1,3 +1,4 @@
+﻿#pragma once
 #include <string>
 #include <vector>
 #include "enemy.h"
@@ -12,6 +13,8 @@ private:
     std::string name;
     // Text description of the area shown to the player
     std::string text;
+    // Text description of the results of searching area
+    std::string searchResults;
     // Filename of the area's background image
     std::string backgroundFile;
     // Vector of enemies that can be fought in the area
@@ -38,6 +41,16 @@ public:
     std::string getSouthArea(){return southArea;}
     std::string getWestArea(){return westArea;}
 
+    void setId(std::string);
+    void setName(std::string);
+    void setText(std::string);
+    void setBackgroundFile(std::string);
+    void setSearchResult(std::string);
+    void setNorthArea(std::string);
+    void setEastArea(std::string);
+    void setSouthArea(std::string);
+    void setWestArea(std::string);
     Enemy createEnemy();
+    bool hasEnemies();
 
 };

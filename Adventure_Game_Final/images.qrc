@@ -7,5 +7,6 @@
         <file>assests/mock_title.jpg</file>
         <file>assests/mockCamp.jpg</file>
         <file>assests/questPanel.jpg</file>
+        <file>assests/map.txt</file>
     </qresource>
 </RCC>

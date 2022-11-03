@@ -77,19 +77,27 @@ font: 48pt &quot;Planewalker&quot;;</string>
        <pixmap resource="images.qrc">:/assests/bkg-castle.png</pixmap>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="beginButton">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>350</y>
-        <width>161</width>
+        <x>360</x>
+        <y>340</y>
+        <width>141</width>
         <height>61</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">font: 26pt &quot;Planewalker&quot;;
-background-color: rgb(37, 142, 0);
-border-radius: 10px;</string>
+       <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
       </property>
       <property name="text">
        <string>Begin</string>
@@ -97,7 +105,7 @@ border-radius: 10px;</string>
      </widget>
      <zorder>label</zorder>
      <zorder>titleLabel</zorder>
-     <zorder>pushButton</zorder>
+     <zorder>beginButton</zorder>
     </widget>
     <widget class="QWidget" name="gameScreen">
      <widget class="QLabel" name="bkgLabel">

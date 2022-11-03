@@ -1,6 +1,8 @@
 #include "map.h"
-#include <vector>
 
+Map::Map(){
+    loadAreasFromFile(":/assests/map.txt");
+};
 
 // Returns a game area from an ID
 // Returns an area with an ID of 0 if no area is found
@@ -25,3 +27,47 @@ std::vector<Area> Map::getConnectedAreas(Area workingArea){
     connectedAreas.push_back(getAreaById(workingArea.getWestArea()));
     return connectedAreas;
 }
+
+void Map::setArea(Area area){
+    mapData.push_back(area);
+};
+
+void Map::loadAreasFromFile(std::string fileName){
+    QFile reader(QString::fromStdString(fileName));
+    if(!reader.open(QIODevice::ReadOnly)){
+        throw "Area file not found";
+    }
+    QTextStream stream(&reader);
+    Area temp;
+    int areaPosition = 0;
+    while(!stream.atEnd()){
+        QString line;
+        line = stream.readLine();
+        if(line == "+"){
+            setArea(temp);
+            areaPosition = 0;
+        }
+        switch(areaPosition){
+        case 0: {
+            temp.setId(line.toStdString());
+            areaPosition++;
+            break;
+        }case 1:{
+            temp.setText(line.toStdString());
+            areaPosition++;
+            break;
+        }case 2:{
+            temp.setBackgroundFile(line.toStdString());
+            areaPosition++;
+            break;
+        }case 3:{
+            temp.setSearchResult(line.toStdString());
+            areaPosition++;
+            break;
+        } default :{
+            break;
+        }
+        }
+
+    }
+};

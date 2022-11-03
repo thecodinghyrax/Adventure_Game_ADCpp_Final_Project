@@ -21,12 +21,11 @@ public:
     void renderScene(Area);
 
 private slots:
-    void on_pushButton_clicked();
-
+    void on_beginButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    std::vector<Area> areas;
+    Map gameMap;
 
 
 };

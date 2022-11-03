@@ -1,0 +1,9 @@
+0
+Drew, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
+:/assests/bkg-camp.png
+You have searched all around and found nothing
++
+1
+You are in a new place. Cool
+:/assests/bkg-castle.png
+You have searched all around and found the one ring

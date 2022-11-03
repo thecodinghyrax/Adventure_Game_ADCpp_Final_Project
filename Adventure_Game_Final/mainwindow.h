@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "scene.h"
 #include "map.h"
+#include "area.h"
 #include <vector>
 
 QT_BEGIN_NAMESPACE
@@ -18,7 +18,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void createScene();
-    void renderScene(Scene);
+    void renderScene(Area);
 
 private slots:
     void on_pushButton_clicked();
@@ -26,7 +26,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    std::vector<Scene> scenes;
+    std::vector<Area> areas;
+
 
 };
 #endif // MAINWINDOW_H

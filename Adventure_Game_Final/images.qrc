@@ -1,12 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>assests/bkg-camp.png</file>
-        <file>assests/bkg-castle.png</file>
-        <file>assests/compass.jpg</file>
-        <file>assests/compass.png</file>
-        <file>assests/mock_title.jpg</file>
-        <file>assests/mockCamp.jpg</file>
-        <file>assests/questPanel.jpg</file>
-        <file>assests/map.txt</file>
+        <file>assets/bkg-camp.png</file>
+        <file>assets/bkg-castle.png</file>
+        <file>assets/compass.jpg</file>
+        <file>assets/compass.png</file>
+        <file>assets/mock_title.jpg</file>
+        <file>assets/mockCamp.jpg</file>
+        <file>assets/questPanel.jpg</file>
+        <file>assets/map.txt</file>
     </qresource>
 </RCC>

@@ -1,7 +1,7 @@
 #include "map.h"
 
 Map::Map(){
-    loadAreasFromFile(":/assests/map.txt");
+    loadAreasFromFile(":/assets/map.txt");
 };
 
 // Returns a game area from an ID

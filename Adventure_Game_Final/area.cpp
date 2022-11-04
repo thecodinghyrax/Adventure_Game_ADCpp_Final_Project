@@ -15,8 +15,8 @@ void Area::setName(std::string name){
 void Area::setText(std::string text){
     this->text = text;
 };
-void Area::setSearchResult(std::string searchResults){
-    this->searchResults = searchResults;
+void Area::setSearchResult(std::string searchResult){
+    this->searchResult = searchResult;
 };
 void Area::setBackgroundFile(std::string backgroundFile){
     this->backgroundFile = backgroundFile;

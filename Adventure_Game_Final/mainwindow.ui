@@ -74,7 +74,7 @@ font: 48pt &quot;Planewalker&quot;;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="images.qrc">:/assests/bkg-castle.png</pixmap>
+       <pixmap resource="images.qrc">:/assets/bkg-castle.png</pixmap>
       </property>
      </widget>
      <widget class="QPushButton" name="beginButton">
@@ -121,7 +121,7 @@ border-radius:10px;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="images.qrc">:/assests/bkg-camp.png</pixmap>
+       <pixmap resource="images.qrc">:/assets/bkg-camp.png</pixmap>
       </property>
      </widget>
      <widget class="QLabel" name="label_3">
@@ -137,7 +137,7 @@ border-radius:10px;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="images.qrc">:/assests/questPanel.jpg</pixmap>
+       <pixmap resource="images.qrc">:/assets/questPanel.jpg</pixmap>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
@@ -322,7 +322,7 @@ background: transparent;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="images.qrc">:/assests/compass.png</pixmap>
+       <pixmap resource="images.qrc">:/assets/compass.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -416,7 +416,7 @@ font: 20pt &quot;Planewalker&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

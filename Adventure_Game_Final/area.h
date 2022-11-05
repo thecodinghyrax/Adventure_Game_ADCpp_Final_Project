@@ -14,7 +14,7 @@ private:
     // Text description of the area shown to the player
     std::string text;
     // Text description of the results of searching area
-    std::string searchResults;
+    std::string searchResult;
     // Filename of the area's background image
     std::string backgroundFile;
     // Vector of enemies that can be fought in the area
@@ -36,6 +36,7 @@ public:
     std::string getName(){return name;}
     std::string getText(){return text;}
     std::string getBackgroundFile(){return backgroundFile;}
+    std::string getSearchResult(){return searchResult;}
     std::string getNorthArea(){return northArea;}
     std::string getEastArea(){return eastArea;}
     std::string getSouthArea(){return southArea;}
@@ -50,6 +51,7 @@ public:
     void setEastArea(std::string);
     void setSouthArea(std::string);
     void setWestArea(std::string);
+    void setEnemies(std::vector<Enemy>);
     Enemy createEnemy();
     bool hasEnemies();
 

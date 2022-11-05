@@ -1,9 +1,16 @@
-0
+camp
+Starting Camp
 Drew, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
-:/assests/bkg-camp.png
 You have searched all around and found nothing
+:/assets/bkg-camp.png
+0
+lake,0,0,0
 +
-1
+lake
+Lake
 You are in a new place. Cool
-:/assests/bkg-castle.png
 You have searched all around and found the one ring
+:/assets/bkg-castle.png
+0
+0,0,camp,0
++

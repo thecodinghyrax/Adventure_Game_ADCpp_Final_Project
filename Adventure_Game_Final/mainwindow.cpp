@@ -25,6 +25,7 @@ void MainWindow::createScene(){ // This is tempary to test
     temp.setBackgroundFile(":/assets/bkg-camp.png");
     temp.setSearchResult("You have search all around and found nothing");
     gameMap.setArea(temp);
+    gameMap.loadAreasFromFile(":/assets/map.txt");
 };
 
 void MainWindow::renderScene(Area current){

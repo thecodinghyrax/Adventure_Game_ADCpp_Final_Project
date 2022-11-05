@@ -51,6 +51,7 @@ public:
     void setEastArea(std::string);
     void setSouthArea(std::string);
     void setWestArea(std::string);
+    void setEnemies(std::vector<Enemy>);
     Enemy createEnemy();
     bool hasEnemies();
 

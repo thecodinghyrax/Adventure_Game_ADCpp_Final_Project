@@ -34,6 +34,9 @@ void Area::setSouthArea(std::string southArea){
 void Area::setWestArea(std::string westArea){
     this->westArea = westArea;
 };
+void Area::setEnemies(std::vector<Enemy> enemies){
+    this->enemyVector = enemies;
+}
 Area::Area(std::string id){
     this->id = id;
 };

@@ -2,34 +2,25 @@
 Abandoned Farmhouse
 You find a dilapidated farmhouse.
 You have searched all around and found nothing
-:/assests/bkg-farm.png
+:/assets/bkg-farm.png
 EnemyVectorWillGoHere
--1
-1
--1
--1
+-1,1,-1,-1
 +
 1
 A Dark Path
 You find a dark path through the woods
 You have searched all around and found nothing
-:/assests/bkg-path1.png
+:/assets/bkg-path1.png
 EnemyVectorWillGoHere
-6
-2
--1
-0
+6,2,-1,0
 +
 2
 Base camp
 Drew, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
 You have searched all around and found nothing
-:/assests/bkg-camp.png
+:/assets/bkg-camp.png
 EnemyVectorWillGoHere
-7
-3
--1
-1
+7,3,-1,1
 +
 3
 Another Dark Path
@@ -37,131 +28,94 @@ You find another dark path through the woods
 You have searched all around and found nothing
 :/assests/bkg-path2.png
 EnemyVectorWillGoHere
--1
-4
--1
-2
+-1,4,-1,2
 +
 4
 A Clearing in the woods
 A come upon a clearing in the woods. Something was buried here recently.
 You find a strange key.
-:/assests/bkg-grave.png
+:/assets/bkg-grave.png
 EnemyVectorWillGoHere
--1
--1
--1
-3
+-1,-1,-1,3
 +
 6
 A Well Traveled Path
 You find a path that looks heavily traveled. 
 You have searched all around and found nothing
-:/assests/bkg-path3.png
+:/assets/bkg-path3.png
 EnemyVectorWillGoHere
-11
-7
-1
--1
+11,7,1,-1
 +
 7
 A Clam Still Lake
 You approach a lake but are unable to cross.
 You have searched all around and found nothing
-:/assests/bkg-lake.png
+:/assets/bkg-lake.png
 EnemyVectorWillGoHere
-12
--1
-2
-6
+12,-1,2,6
 +
 10
 The Towns Rotten Dump
 A come upon a putrid field or refuse. This must be the towns dumping grounds.
 You have searched all around and find some treasure.
-:/assests/bkg-lake.png
+:/assets/bkg-lake.png
 EnemyVectorWillGoHere
--1
-11
--1
--1
+-1,11,-1,-1
 +
 11
 A Small Village
 You wonder into a small local village. No one seems to be around.
 You have searched all around and found nothing
-:/assests/bkg-town.png
+:/assets/bkg-town.png
 EnemyVectorWillGoHere
-16
-12
-6
-10
+16,12,6,10
 +
 12
 A Path Connecting A Village And A Forest
 This is a path that goes from the village to a nearby forest.
 You have searched all around and found nothing
-:/assests/bkg-path4.png
+:/assets/bkg-path4.png
 EnemyVectorWillGoHere
--1
-13
-7
-11
+-1,13,7,11
 +
 13
 A Misty Forest 
 You wondered into a dark and misty forest.
 You have searched all around and found nothing
-:/assests/bkg-forest1.png
+:/assets/bkg-forest1.png
 EnemyVectorWillGoHere
-18
-14
--1
-12
+18,14,-1,12
 +
 14
 More Misty Forest 
 You wondered further into a dark and misty forest.
 You have searched all around and found nothing
-:/assests/bkg-forest2.png
+:/assets/bkg-forest2.png
 EnemyVectorWillGoHere
-19
--1
--1
-13
+19,-1,-1,13
 +
 16
 A Small Alchemist Cottage
 You discover a small cottage belonging to a local alchemist.
 You have searched the alchemist house and found 4 health potions
-:/assests/bkg-house.png
+:/assets/bkg-house.png
 EnemyVectorWillGoHere
--1
--1
-11
--1
+-1,-1,11,-1
 +
 18
 More Misty Forest 
 You wondered further into a dark and misty forest.
 You have searched all around and found nothing
-:/assests/bkg-forest3.png
+:/assets/bkg-forest3.png
 EnemyVectorWillGoHere
--1
-19
-13
--1
+-1,19,13,-1
 +
 19
 An Evil Castle On A Hill
 You stumble upon a grand but evil looking castle.
 You have searched all around and found a door with a key hole.
-:/assests/bkg-end-castle.png
+:/assets/bkg-end-castle.png
 EnemyVectorWillGoHere
--1
--1
-14
-18
+-1,-1,14,18
 +
-
 

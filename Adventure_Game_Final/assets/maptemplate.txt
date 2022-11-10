@@ -1,0 +1,7 @@
+id
+name
+text
+searchResult
+backgroundImage
+enemies (enemy ids, comma seperated, 0 for none)
+connected areas (area ids, comma seperated, 0 for none, N, E, S, W)

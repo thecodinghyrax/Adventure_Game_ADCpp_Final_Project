@@ -1,23 +1,23 @@
 <RCC>
     <qresource prefix="/">
-        <file>assests/bkg-camp.png</file>
-        <file>assests/bkg-castle.png</file>
-        <file>assests/compass.jpg</file>
-        <file>assests/compass.png</file>
-        <file>assests/questPanel.jpg</file>
-        <file>assests/map.txt</file>
-        <file>assests/bkg-end-castle.png</file>
-        <file>assests/bkg-farm.png</file>
-        <file>assests/bkg-forest1.png</file>
-        <file>assests/bkg-forest2.png</file>
-        <file>assests/bkg-forest3.png</file>
-        <file>assests/bkg-grave.png</file>
-        <file>assests/bkg-house.png</file>
-        <file>assests/bkg-lake.png</file>
-        <file>assests/bkg-path1.png</file>
-        <file>assests/bkg-path2.png</file>
-        <file>assests/bkg-path3.png</file>
-        <file>assests/bkg-path4.png</file>
-        <file>assests/bkg-town.png</file>
+        <file>assets/bkg-camp.png</file>
+        <file>assets/bkg-castle.png</file>
+        <file>assets/compass.jpg</file>
+        <file>assets/compass.png</file>
+        <file>assets/questPanel.jpg</file>
+        <file>assets/map.txt</file>
+        <file>assets/bkg-end-castle.png</file>
+        <file>assets/bkg-farm.png</file>
+        <file>assets/bkg-forest1.png</file>
+        <file>assets/bkg-forest2.png</file>
+        <file>assets/bkg-forest3.png</file>
+        <file>assets/bkg-grave.png</file>
+        <file>assets/bkg-house.png</file>
+        <file>assets/bkg-lake.png</file>
+        <file>assets/bkg-path1.png</file>
+        <file>assets/bkg-path2.png</file>
+        <file>assets/bkg-path3.png</file>
+        <file>assets/bkg-path4.png</file>
+        <file>assets/bkg-town.png</file>
     </qresource>
 </RCC>

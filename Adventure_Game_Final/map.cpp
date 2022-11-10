@@ -3,7 +3,7 @@
 
 
 Map::Map(){
-    loadAreasFromFile(":/assests/map.txt");
+    loadAreasFromFile(":/assets/map.txt");
 
 };
 
@@ -73,28 +73,36 @@ void Map::loadAreasFromFile(std::string fileName){
             areaPosition++;
             break;
         }case 5:{
-            //temp.setEnemyVector(line.toStdString());   //skipping for now
+            std::vector<std::string> enemyIds;
+            std::vector<Enemy> enemyObjects;
+            //TODO: Read enemy IDs from map.txt; get enemies from an enemies.txt file
+
+            temp.setEnemies(enemyObjects);
             areaPosition++;
             break;
         }case 6:{
-            temp.setNorthArea(line.toStdString());
+            std::vector<std::string> connections;
+            std::string curLine = line.toStdString();
+            // For each direction, split the line string to get the IDs
+            for (int i = 0; i < 4; i++){
+                connections.push_back(curLine.substr(0,curLine.find(",")));
+                std::string a = curLine.substr(0,curLine.find(","));
+                curLine = curLine.substr(curLine.find(",") + 1, curLine.size());
+            }
+            temp.setNorthArea(connections[0]);
+            temp.setEastArea(connections[1]);
+            temp.setSouthArea(connections[2]);
+            temp.setWestArea(connections[3]);
+
             areaPosition++;
             break;
         }case 7:{
-            temp.setEastArea(line.toStdString());
-            areaPosition++;
-            break;
-        }case 8:{
-            temp.setSouthArea(line.toStdString());
-            areaPosition++;
-            break;
-        }case 9:{
-            temp.setWestArea(line.toStdString());
-            areaPosition++;
-            break;
+            // Add the area to the map data vector
+            setArea(temp);
+            areaPosition = 0;
         } default :{
-            break;
-        }
+             break;
+         }
         }
 
     }

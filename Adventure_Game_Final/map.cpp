@@ -1,4 +1,4 @@
-#include "map.h"
+﻿#include "map.h"
 
 Map::Map(){
     loadAreasFromFile(":/assests/map.txt");
@@ -53,15 +53,39 @@ void Map::loadAreasFromFile(std::string fileName){
             areaPosition++;
             break;
         }case 1:{
-            temp.setText(line.toStdString());
+            temp.setName(line.toStdString());
             areaPosition++;
             break;
         }case 2:{
-            temp.setBackgroundFile(line.toStdString());
+            temp.setText(line.toStdString());
             areaPosition++;
             break;
         }case 3:{
             temp.setSearchResult(line.toStdString());
+            areaPosition++;
+            break;
+        }case 4:{
+            temp.setBackgroundFile(line.toStdString());
+            areaPosition++;
+            break;
+        }case 5:{
+            //temp.setEnemyVector(line.toStdString());   //skipping for now
+            areaPosition++;
+            break;
+        }case 6:{
+            temp.setNorthArea(line.toStdString());
+            areaPosition++;
+            break;
+        }case 7:{
+            temp.setEastArea(line.toStdString());
+            areaPosition++;
+            break;
+        }case 8:{
+            temp.setSouthArea(line.toStdString());
+            areaPosition++;
+            break;
+        }case 9:{
+            temp.setWestArea(line.toStdString());
             areaPosition++;
             break;
         } default :{

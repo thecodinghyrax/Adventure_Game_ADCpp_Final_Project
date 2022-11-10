@@ -36,6 +36,7 @@ public:
     std::string getName(){return name;}
     std::string getText(){return text;}
     std::string getBackgroundFile(){return backgroundFile;}
+    std::string getSearchResult(){return searchResults;}
     std::string getNorthArea(){return northArea;}
     std::string getEastArea(){return eastArea;}
     std::string getSouthArea(){return southArea;}

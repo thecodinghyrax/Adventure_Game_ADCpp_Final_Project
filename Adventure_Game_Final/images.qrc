@@ -2,8 +2,6 @@
     <qresource prefix="/">
         <file>assets/bkg-camp.png</file>
         <file>assets/bkg-castle.png</file>
-        <file>assets/compass.jpg</file>
-        <file>assets/compass.png</file>
         <file>assets/questPanel.jpg</file>
         <file>assets/map.txt</file>
         <file>assets/bkg-end-castle.png</file>
@@ -19,5 +17,10 @@
         <file>assets/bkg-path3.png</file>
         <file>assets/bkg-path4.png</file>
         <file>assets/bkg-town.png</file>
+        <file>assets/Planewalker.otf</file>
+        <file>assets/compass.png</file>
+        <file>assets/bkg-dump.png</file>
+        <file>assets/bkg-end.png</file>
+        <file>assets/bkg-journal.png</file>
     </qresource>
 </RCC>

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QString>
+#include <QStringListModel>
 #include "map.h"
 #include "area.h"
 #include <vector>
@@ -20,6 +21,7 @@ public:
     ~MainWindow();
     void renderScene(Area);
 
+
 private slots:
     void on_beginButton_clicked();
 
@@ -31,10 +33,23 @@ private slots:
 
     void on_eastBtn_clicked();
 
+    void on_quitBtn_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_toGame_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_pushButton_8_clicked();
+
 private:
     Ui::MainWindow *ui;
     Map gameMap;
     Area current;
+    QVector<QString> journal;
 
 
 };

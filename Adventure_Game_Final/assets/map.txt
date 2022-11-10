@@ -16,7 +16,7 @@ EnemyVectorWillGoHere
 +
 2
 Base camp
-Drew, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
+Adventurer, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
 You have searched all around and found nothing
 :/assets/bkg-camp.png
 EnemyVectorWillGoHere
@@ -26,7 +26,7 @@ EnemyVectorWillGoHere
 Another Dark Path
 You find another dark path through the woods
 You have searched all around and found nothing
-:/assests/bkg-path2.png
+:/assets/bkg-path2.png
 EnemyVectorWillGoHere
 -1,4,-1,2
 +
@@ -58,7 +58,7 @@ EnemyVectorWillGoHere
 The Towns Rotten Dump
 A come upon a putrid field or refuse. This must be the towns dumping grounds.
 You have searched all around and find some treasure.
-:/assets/bkg-lake.png
+:/assets/bkg-dump.png
 EnemyVectorWillGoHere
 -1,11,-1,-1
 +

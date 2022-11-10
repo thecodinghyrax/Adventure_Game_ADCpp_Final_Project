@@ -66,7 +66,11 @@ void Map::loadAreasFromFile(std::string fileName){
             areaPosition++;
             break;
         }case 5:{
-            //temp.setEnemyVector(line.toStdString());   //skipping for now
+            std::vector<std::string> enemyIds;
+            std::vector<Enemy> enemyObjects;
+            //TODO: Read enemy IDs from map.txt; get enemies from an enemies.txt file
+
+            temp.setEnemies(enemyObjects);
             areaPosition++;
             break;
         }case 6:{
@@ -85,12 +89,12 @@ void Map::loadAreasFromFile(std::string fileName){
 
             areaPosition++;
             break;
-         }case 7:{
+        }case 7:{
             // Add the area to the map data vector
             setArea(temp);
             areaPosition = 0;
-         } default :{
-               break;
+        } default :{
+             break;
          }
         }
 

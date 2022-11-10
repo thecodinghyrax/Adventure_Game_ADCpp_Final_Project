@@ -22,7 +22,7 @@ void MainWindow::createScene(){ // This is tempary to test
     Area temp;
     temp.setId("0");
     temp.setText("Dude, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?");
-    temp.setBackgroundFile(":/assests/bkg-camp.png");
+    temp.setBackgroundFile(":/assets/bkg-camp.png");
     temp.setSearchResult("You have search all around and found nothing");
     gameMap.setArea(temp);
 };

@@ -26,6 +26,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Map gameMap;
+    Area current;
 
 
 };

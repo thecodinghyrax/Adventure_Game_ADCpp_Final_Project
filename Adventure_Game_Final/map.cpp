@@ -2,6 +2,7 @@
 
 Map::Map(){
     loadAreasFromFile(":/assests/map.txt");
+
 };
 
 // Returns a game area from an ID

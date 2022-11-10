@@ -1,7 +1,8 @@
-#include "map.h"
+﻿#include "map.h"
 
 Map::Map(){
     loadAreasFromFile(":/assets/map.txt");
+
 };
 
 // Returns a game area from an ID
@@ -93,8 +94,8 @@ void Map::loadAreasFromFile(std::string fileName){
             setArea(temp);
             areaPosition = 0;
         } default :{
-            break;
-        }
+             break;
+         }
         }
 
     }

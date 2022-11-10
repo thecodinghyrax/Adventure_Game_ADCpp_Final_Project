@@ -28,19 +28,19 @@ void MainWindow::createScene(){ // This is tempary to test
 };
 
 void MainWindow::renderScene(Area current){
-    std::cout << current.getBackgroundFile() << std::endl;
-        std::cout << current.getId() << std::endl;
-            std::cout << current.getText() << std::endl;
-                std::cout << current.getName() << std::endl;
     QPixmap bkg(current.getBackgroundFile().c_str());
     ui->bkgLabel->setPixmap(bkg);
     ui->descLabel->setText(current.getText().c_str());
+
 };
 
 void MainWindow::on_beginButton_clicked()
 {
     //createScene(gameMap.getAreaById("0")); /// Testing
-    renderScene(gameMap.getAreaById("camp"));
+    current = gameMap.getAreaById("0"); // This is still a work in progress. Having some issue with loading the text file I believe //TODO fix
+
+    renderScene(current);
+
     ui->stackedWidget->setCurrentIndex(1); // Index 1 will always be the location scene
 }
 

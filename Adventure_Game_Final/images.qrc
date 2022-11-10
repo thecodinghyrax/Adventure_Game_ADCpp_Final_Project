@@ -4,9 +4,20 @@
         <file>assets/bkg-castle.png</file>
         <file>assets/compass.jpg</file>
         <file>assets/compass.png</file>
-        <file>assets/mock_title.jpg</file>
-        <file>assets/mockCamp.jpg</file>
         <file>assets/questPanel.jpg</file>
         <file>assets/map.txt</file>
+        <file>assets/bkg-end-castle.png</file>
+        <file>assets/bkg-farm.png</file>
+        <file>assets/bkg-forest1.png</file>
+        <file>assets/bkg-forest2.png</file>
+        <file>assets/bkg-forest3.png</file>
+        <file>assets/bkg-grave.png</file>
+        <file>assets/bkg-house.png</file>
+        <file>assets/bkg-lake.png</file>
+        <file>assets/bkg-path1.png</file>
+        <file>assets/bkg-path2.png</file>
+        <file>assets/bkg-path3.png</file>
+        <file>assets/bkg-path4.png</file>
+        <file>assets/bkg-town.png</file>
     </qresource>
 </RCC>

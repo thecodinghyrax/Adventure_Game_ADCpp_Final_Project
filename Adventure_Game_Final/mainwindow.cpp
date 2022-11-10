@@ -1,6 +1,8 @@
 ﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "enemy.h"
+#include "weapons.h"
+#include "player.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -42,5 +44,13 @@ void MainWindow::on_beginButton_clicked()
     //createScene(gameMap.getAreaById("0")); /// Testing
     renderScene(gameMap.getAreaById("camp"));
     ui->stackedWidget->setCurrentIndex(1); // Index 1 will always be the location scene
+
+    // dont mind me
+    Enemy testE;
+    testE.pushEnemies();
+    Weapon testW;
+    testW.pushWeapons();
+    Player testP;
+    testP.pushPlayerStats();
 }
 

@@ -10,16 +10,22 @@ CONFIG += c++17
 
 SOURCES += \
     area.cpp \
+    battle.cpp \
     enemy.cpp \
     main.cpp \
     mainwindow.cpp \
-    map.cpp
+    map.cpp \
+    player.cpp \
+    weapons.cpp
 
 HEADERS += \
     area.h \
+    battle.h \
     enemy.h \
     mainwindow.h \
-    map.h
+    map.h \
+    player.h \
+    weapons.h
 
 FORMS += \
     mainwindow.ui

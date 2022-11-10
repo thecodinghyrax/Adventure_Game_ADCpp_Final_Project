@@ -20,5 +20,7 @@
         <file>assets/Planewalker.otf</file>
         <file>assets/compass.png</file>
         <file>assets/bkg-dump.png</file>
+        <file>assets/bkg-end.png</file>
+        <file>assets/bkg-journal.png</file>
     </qresource>
 </RCC>

@@ -1,4 +1,4 @@
-0
+﻿0
 Abandoned Farmhouse
 You find a dilapidated farmhouse.
 You have searched all around and found nothing
@@ -34,6 +34,7 @@ EnemyVectorWillGoHere
 3
 Another Dark Path
 You find another dark path through the woods
+You have searched all around and found nothing
 :/assests/bkg-path2.png
 EnemyVectorWillGoHere
 -1

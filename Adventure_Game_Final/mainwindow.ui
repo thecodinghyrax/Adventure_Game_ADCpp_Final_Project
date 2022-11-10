@@ -150,9 +150,9 @@ border-radius:10px;</string>
      <widget class="QPushButton" name="northBtn">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>360</x>
         <y>380</y>
-        <width>81</width>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -177,9 +177,9 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="southBtn">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>360</x>
         <y>500</y>
-        <width>91</width>
+        <width>111</width>
         <height>41</height>
        </rect>
       </property>
@@ -206,7 +206,7 @@ color: rgb(100,10, 0);</string>
        <rect>
         <x>450</x>
         <y>440</y>
-        <width>81</width>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
@@ -231,9 +231,9 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="westBtn">
       <property name="geometry">
        <rect>
-        <x>280</x>
+        <x>260</x>
         <y>440</y>
-        <width>81</width>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>

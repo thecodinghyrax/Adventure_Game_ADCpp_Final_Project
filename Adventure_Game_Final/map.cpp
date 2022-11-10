@@ -1,5 +1,7 @@
 ﻿#include "map.h"
 
+
+
 Map::Map(){
     loadAreasFromFile(":/assests/map.txt");
 
@@ -47,6 +49,7 @@ void Map::loadAreasFromFile(std::string fileName){
         if(line == "+"){
             setArea(temp);
             areaPosition = 0;
+            line = stream.readLine(); // throwaway line
         }
         switch(areaPosition){
         case 0: {

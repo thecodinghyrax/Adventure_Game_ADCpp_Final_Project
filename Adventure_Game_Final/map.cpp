@@ -1,5 +1,7 @@
 ﻿#include "map.h"
 
+
+
 Map::Map(){
     loadAreasFromFile(":/assets/map.txt");
 
@@ -44,6 +46,11 @@ void Map::loadAreasFromFile(std::string fileName){
     while(!stream.atEnd()){
         QString line;
         line = stream.readLine();
+        if(line == "+"){
+            setArea(temp);
+            areaPosition = 0;
+            line = stream.readLine(); // throwaway line
+        }
         switch(areaPosition){
         case 0: {
             temp.setId(line.toStdString());

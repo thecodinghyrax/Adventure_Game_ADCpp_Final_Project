@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QString>
 #include "map.h"
 #include "area.h"
 #include <vector>
@@ -17,11 +18,18 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void createScene();
     void renderScene(Area);
 
 private slots:
     void on_beginButton_clicked();
+
+    void on_northBtn_clicked();
+
+    void on_southBtn_clicked();
+
+    void on_westBtn_clicked();
+
+    void on_eastBtn_clicked();
 
 private:
     Ui::MainWindow *ui;

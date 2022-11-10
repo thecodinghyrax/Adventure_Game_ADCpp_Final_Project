@@ -10,6 +10,24 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Adventure Game</string>
   </property>
@@ -38,6 +56,12 @@
       <width>800</width>
       <height>600</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
@@ -150,7 +174,7 @@ border-radius:10px;</string>
      <widget class="QPushButton" name="northBtn">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>357</x>
         <y>480</y>
         <width>81</width>
         <height>21</height>
@@ -177,7 +201,7 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="southBtn">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>357</x>
         <y>550</y>
         <width>81</width>
         <height>31</height>
@@ -205,7 +229,7 @@ color: rgb(100,10, 0);</string>
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>510</y>
+        <y>515</y>
         <width>91</width>
         <height>21</height>
        </rect>
@@ -232,7 +256,7 @@ color: rgb(100,10, 0);</string>
       <property name="geometry">
        <rect>
         <x>290</x>
-        <y>510</y>
+        <y>515</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -335,7 +359,7 @@ background: transparent;</string>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>628</x>
         <y>490</y>
         <width>71</width>
         <height>21</height>
@@ -362,7 +386,7 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="pushButton_9">
       <property name="geometry">
        <rect>
-        <x>630</x>
+        <x>642</x>
         <y>550</y>
         <width>51</width>
         <height>21</height>
@@ -406,6 +430,98 @@ font: 20pt &quot;Planewalker&quot;;</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="healthLabelDesc">
+      <property name="geometry">
+       <rect>
+        <x>122</x>
+        <y>514</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(170, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Health</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentHealthLabel">
+      <property name="geometry">
+       <rect>
+        <x>194</x>
+        <y>514</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="potionsLabelDesc">
+      <property name="geometry">
+       <rect>
+        <x>625</x>
+        <y>515</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string>Potions</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentPotionsLabel">
+      <property name="geometry">
+       <rect>
+        <x>601</x>
+        <y>515</y>
+        <width>21</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string>5</string>
       </property>
      </widget>
     </widget>

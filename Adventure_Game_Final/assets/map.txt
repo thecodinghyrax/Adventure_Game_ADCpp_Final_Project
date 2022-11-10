@@ -58,7 +58,7 @@ EnemyVectorWillGoHere
 The Towns Rotten Dump
 A come upon a putrid field or refuse. This must be the towns dumping grounds.
 You have searched all around and find some treasure.
-:/assets/bkg-lake.png
+:/assets/bkg-dump.png
 EnemyVectorWillGoHere
 -1,11,-1,-1
 +

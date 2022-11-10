@@ -14,7 +14,7 @@
    <string>Adventure Game</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset>
     <normaloff>:/assests/compass.png</normaloff>:/assests/compass.png</iconset>
   </property>
   <property name="layoutDirection">
@@ -132,9 +132,9 @@ border-radius:10px;</string>
       <property name="geometry">
        <rect>
         <x>100</x>
-        <y>360</y>
-        <width>601</width>
-        <height>201</height>
+        <y>470</y>
+        <width>611</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="text">
@@ -144,22 +144,22 @@ border-radius:10px;</string>
        <pixmap resource="images.qrc">:/assets/questPanel.jpg</pixmap>
       </property>
       <property name="scaledContents">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="northBtn">
       <property name="geometry">
        <rect>
         <x>360</x>
-        <y>380</y>
-        <width>111</width>
-        <height>41</height>
+        <y>480</y>
+        <width>81</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -167,7 +167,7 @@ border-radius:10px;</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(100,10, 0);</string>
       </property>
       <property name="text">
@@ -178,15 +178,15 @@ color: rgb(100,10, 0);</string>
       <property name="geometry">
        <rect>
         <x>360</x>
-        <y>500</y>
-        <width>111</width>
-        <height>41</height>
+        <y>550</y>
+        <width>81</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -194,7 +194,7 @@ color: rgb(100,10, 0);</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(100,10, 0);</string>
       </property>
       <property name="text">
@@ -204,16 +204,16 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="eastBtn">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>440</y>
-        <width>101</width>
-        <height>41</height>
+        <x>420</x>
+        <y>510</y>
+        <width>91</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -221,7 +221,7 @@ color: rgb(100,10, 0);</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(100,10, 0);</string>
       </property>
       <property name="text">
@@ -231,16 +231,16 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="westBtn">
       <property name="geometry">
        <rect>
-        <x>260</x>
-        <y>440</y>
-        <width>101</width>
-        <height>41</height>
+        <x>290</x>
+        <y>510</y>
+        <width>81</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -248,7 +248,7 @@ color: rgb(100,10, 0);</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(100,10, 0);</string>
       </property>
       <property name="text">
@@ -259,15 +259,15 @@ color: rgb(100,10, 0);</string>
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>380</y>
-        <width>141</width>
-        <height>41</height>
+        <y>490</y>
+        <width>71</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -275,7 +275,7 @@ color: rgb(100,10, 0);</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
@@ -286,23 +286,23 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>500</y>
-        <width>171</width>
-        <height>41</height>
+        <y>550</y>
+        <width>121</width>
+        <height>20</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border : 0;
+font: 16pt &quot;Planewalker&quot;;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
@@ -313,9 +313,9 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>370</x>
-        <y>420</y>
-        <width>81</width>
-        <height>81</height>
+        <y>500</y>
+        <width>51</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -335,16 +335,16 @@ background: transparent;</string>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>590</x>
-        <y>380</y>
-        <width>91</width>
-        <height>41</height>
+        <x>620</x>
+        <y>490</y>
+        <width>71</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -352,7 +352,7 @@ background: transparent;</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
@@ -362,16 +362,16 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="pushButton_9">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>500</y>
-        <width>71</width>
-        <height>41</height>
+        <x>630</x>
+        <y>550</y>
+        <width>51</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>16</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -379,7 +379,7 @@ color: rgb(0, 0, 0);</string>
       <property name="styleSheet">
        <string notr="true">border : 0;
 background: transparent;
-font: 24pt &quot;Planewalker&quot;;
+font: 16pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
@@ -420,7 +420,7 @@ font: 20pt &quot;Planewalker&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

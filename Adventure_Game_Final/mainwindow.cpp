@@ -42,9 +42,8 @@ void MainWindow::on_northBtn_clicked()
 {
     std::string northId = current.getNorthArea();
     if(northId != "-1"){
-        current = gameMap.getAreaById(northId);
+        accessArea(current, gameMap.getAreaById(northId));
         journal.push_back(current.getText().c_str());
-        renderScene(current);
     } else {
         QString blocked = "Blocked";
         ui->northBtn->setText(blocked);
@@ -57,9 +56,8 @@ void MainWindow::on_southBtn_clicked()
 {
     std::string southId = current.getSouthArea();
     if(southId != "-1"){
-        current = gameMap.getAreaById(southId);
+        accessArea(current, gameMap.getAreaById(southId));
         journal.push_back(current.getText().c_str());
-        renderScene(current);
     } else {
         QString blocked = "Blocked";
         ui->southBtn->setText(blocked);
@@ -71,9 +69,8 @@ void MainWindow::on_westBtn_clicked()
 {
     std::string westId = current.getWestArea();
     if(westId != "-1"){
-        current = gameMap.getAreaById(westId);
+        accessArea(current, gameMap.getAreaById(westId));
         journal.push_back(current.getText().c_str());
-        renderScene(current);
     } else {
         QString blocked = "Blocked";
         ui->westBtn->setText(blocked);
@@ -85,9 +82,8 @@ void MainWindow::on_eastBtn_clicked()
 {
     std::string eastId = current.getEastArea();
     if(eastId != "-1"){
-        current = gameMap.getAreaById(eastId);
+        accessArea(current, gameMap.getAreaById(eastId));
         journal.push_back(current.getText().c_str());
-        renderScene(current);
     } else {
         QString blocked = "Blocked";
         ui->eastBtn->setText(blocked);
@@ -136,3 +132,22 @@ void MainWindow::on_pushButton_8_clicked()
     // Health will be set back to 100
 }
 
+// Attempts to access an area
+void MainWindow::accessArea(Area currentArea, Area destination)
+{
+    if (currentArea.getId() == "19" && destination.getId() == "100"){
+        if(false){
+            current = destination;
+            current.setText("You unlock the door using the key.\n" + current.getText());
+            renderScene(current);
+            return;
+        } else {
+            current.setText("You attempt to enter the castle, but the door is locked shut. You will need the key to open it.");
+            renderScene(current);
+            return;
+        }
+    }
+    current = destination;
+    renderScene(current);
+    return;
+}

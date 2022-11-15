@@ -51,6 +51,6 @@ private:
     Area current;
     QVector<QString> journal;
 
-
+    void accessArea(Area, Area);
 };
 #endif // MAINWINDOW_H

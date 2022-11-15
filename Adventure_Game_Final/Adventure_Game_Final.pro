@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     area.cpp \
     enemy.cpp \
+    item.cpp \
     main.cpp \
     mainwindow.cpp \
     map.cpp
@@ -18,6 +19,7 @@ SOURCES += \
 HEADERS += \
     area.h \
     enemy.h \
+    item.h \
     mainwindow.h \
     map.h
 

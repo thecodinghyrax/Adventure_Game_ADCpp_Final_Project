@@ -131,6 +131,9 @@ void MainWindow::on_pushButton_7_clicked()
     QString search = current.getSearchResult().c_str();
     ui->descLabel->setText(search);
     journal.push_back(search);
+    if(current.getSearchItem().getName() != "No item"){
+        player.giveItem(current.getSearchItem());
+    }
 }
 
 
@@ -146,7 +149,7 @@ void MainWindow::on_pushButton_8_clicked()
 void MainWindow::accessArea(Area currentArea, Area destination)
 {
     if (currentArea.getId() == "19" && destination.getId() == "100"){
-        if(false){
+        if(player.hasItemWithName("Old key")){
             current = destination;
             current.setText("You unlock the door using the key.\n" + current.getText());
             renderScene(current);

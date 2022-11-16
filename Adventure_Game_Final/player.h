@@ -2,6 +2,7 @@
 #define PLAYER_H
 #include <string>
 #include <vector>
+#include "item.h"
 
 class Player {
 private:
@@ -13,6 +14,8 @@ private:
     int pWeaponDamage;
     // vector to hold player object
     std::vector<Player> p;
+    // Player item inventory
+    std::vector<Item> inventory;
 
 public:
     Player();
@@ -27,6 +30,9 @@ public:
     void setWeaponDamage(int);
 
     void pushPlayerStats();
+
+    bool hasItemWithName(std::string);
+    void giveItem(Item);
 };
 
 #endif // PLAYER_H

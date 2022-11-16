@@ -133,6 +133,7 @@ void MainWindow::on_pushButton_7_clicked()
     journal.push_back(search);
     if(current.getSearchItem().getName() != "No item"){
         player.giveItem(current.getSearchItem());
+        journal.push_back(QString::fromStdString("You found a " + current.getSearchItem().getName() + ". You put it in your backpack."));
     }
 }
 

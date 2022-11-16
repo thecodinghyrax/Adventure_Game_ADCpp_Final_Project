@@ -4,7 +4,7 @@
 
 Map::Map(){
     loadAreasFromFile(":/assets/map.txt");
-
+    addSearchItems();
 };
 
 // Returns a game area from an ID
@@ -107,3 +107,11 @@ void Map::loadAreasFromFile(std::string fileName){
 
     }
 };
+
+void Map::addSearchItems(){
+    for (int i = 0; i < mapData.size(); i++){
+        if(mapData[i].getId() == "4"){
+            mapData[i].setSearchItem(Item("Old key", "A black key with an ornate design", "noImage", false, 0));
+        }
+    }
+}

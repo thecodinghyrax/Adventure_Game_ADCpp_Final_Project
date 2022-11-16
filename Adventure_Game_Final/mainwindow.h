@@ -7,6 +7,7 @@
 #include "map.h"
 #include "area.h"
 #include <vector>
+#include "player.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -50,7 +51,8 @@ private:
     Map gameMap;
     Area current;
     QVector<QString> journal;
+    Player player;
 
-
+    void accessArea(Area, Area);
 };
 #endif // MAINWINDOW_H

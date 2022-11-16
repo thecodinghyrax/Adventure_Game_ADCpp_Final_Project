@@ -21,7 +21,12 @@ void Area::setSearchResult(std::string searchResult){
 void Area::setBackgroundFile(std::string backgroundFile){
     this->backgroundFile = backgroundFile;
 };
-
+void Area::setSearched(bool searched){
+    this->searched = searched;
+}
+void Area::setSearchItem(Item item){
+    this->searchItem = item;
+}
 void Area::setNorthArea(std::string northArea){
     this->northArea = northArea;
 };
@@ -53,4 +58,12 @@ Enemy Area::createEnemy(){
 
 bool Area::hasEnemies(){
     return enemyVector.size() == 0;
+}
+
+std::string Area::getSearchResult(){
+    if (!searched){
+        return searchResult;
+    } else {
+        return "You have already searched here, there is nothing else to find.";
+    }
 }

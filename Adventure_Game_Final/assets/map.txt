@@ -116,6 +116,29 @@ You stumble upon a grand but evil looking castle.
 You have searched all around and found a door with a key hole.
 :/assets/bkg-end-castle.png
 EnemyVectorWillGoHere
--1,-1,14,18
+100,-1,14,18
 +
-
+100
+Castle Interior 1
+You find yourself inside a dark castle.
+You have searched and found a rusted sword.
+:/assets/bkg-end-castle.png
+EnemyVectorWillGoHere
+-1,102,19,101
++
+101
+Castle Interior 2
+You find yourself inside a dark castle.2
+You have searched and found a rusted sword.
+:/assets/bkg-end-castle.png
+EnemyVectorWillGoHere
+-1,100,-1,-1
++
+102
+Castle Interior 3
+You find yourself inside a dark castle.3
+You have searched and found a rusted sword.
+:/assets/bkg-end-castle.png
+EnemyVectorWillGoHere
+-1,-1,-1,100
++

@@ -116,29 +116,61 @@ You stumble upon a grand but evil looking castle.
 You have searched all around and found a door with a key hole.
 :/assets/bkg-end-castle.png
 EnemyVectorWillGoHere
-100,-1,14,18
+24,-1,14,18
 +
-100
-Castle Interior 1
-You find yourself inside a dark castle.
-You have searched and found a rusted sword.
-:/assets/bkg-end-castle.png
+24
+Castle Entrance
+You find yourself inside a dark castle. There is a hallway leading north.
+You have searched all around and found nothing
+:/assets/bkg-hall1.png
 EnemyVectorWillGoHere
--1,102,19,101
+29,-1,19,-1
 +
-101
-Castle Interior 2
-You find yourself inside a dark castle.2
-You have searched and found a rusted sword.
-:/assets/bkg-end-castle.png
+29
+Castle Hallway
+You are in a hallway that heads north and west.
+You have searched all around and found nothing
+:/assets/bkg-hall4.png
 EnemyVectorWillGoHere
--1,100,-1,-1
+34,-1,24,28
 +
-102
-Castle Interior 3
-You find yourself inside a dark castle.3
-You have searched and found a rusted sword.
-:/assets/bkg-end-castle.png
+28
+Castle West Hallway
+This hallway leads further to the west.
+You have searched all around and found nothing
+:/assets/bkg-hall3.png
 EnemyVectorWillGoHere
--1,-1,-1,100
+-1,29,-1,27
++
+27
+Castle Dead End
+You have reached a dead end. There is no way to proceed in this direction.
+You have searched all around and found nothing
+:/assets/bkg-deadend.png
+EnemyVectorWillGoHere
+-1,28,-1,-1
++
+34
+Castle Hallway North
+This hallway leads to the north and east. You see a faint light to the west
+You have searched all around and found nothing
+:/assets/bkg-hall2.png
+EnemyVectorWillGoHere
+39,35,29,-1
++
+35
+Castle Another Dead End
+A have reached another dead end. There is a treasure chest in the corner of the room.
+You search the chest an find a wooden stake.
+:/assets/bkg-deadend-treasure.png
+EnemyVectorWillGoHere
+-1,-1,-1,34
++
+39
+Castle Throne Room
+You enter what appears to be a throne room. Sitting on the throne is a vampire.
+You searh the room and find a letter.
+:/assets/bkg-boss-room.png
+EnemyVectorWillGoHere
+-1,-1,34,-1
 +

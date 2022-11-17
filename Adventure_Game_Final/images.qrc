@@ -22,5 +22,12 @@
         <file>assets/bkg-dump.png</file>
         <file>assets/bkg-end.png</file>
         <file>assets/bkg-journal.png</file>
+        <file>assets/bkg-boss-room.png</file>
+        <file>assets/bkg-deadend.png</file>
+        <file>assets/bkg-hall4.png</file>
+        <file>assets/bkg-hall3.png</file>
+        <file>assets/bkg-deadend-treasure.png</file>
+        <file>assets/bkg-hall2.png</file>
+        <file>assets/bkg-hall1.png</file>
     </qresource>
 </RCC>

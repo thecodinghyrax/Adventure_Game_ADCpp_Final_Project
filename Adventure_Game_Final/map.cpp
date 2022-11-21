@@ -110,8 +110,17 @@ void Map::loadAreasFromFile(std::string fileName){
 
 void Map::addSearchItems(){
     for (size_t i = 0; i < mapData.size(); i++){
+        if(mapData[i].getId() == "0"){
+            mapData[i].setSearchItem(Item("Hammer", "This hammer has seen better days, but appears perfectly usable.", "noImage", false, 0));
+        }
         if(mapData[i].getId() == "4"){
-            mapData[i].setSearchItem(Item("Old key", "A black key with an ornate design", "noImage", false, 0));
+            mapData[i].setSearchItem(Item("Old key", "A black key with an ornate design.", "noImage", false, 0));
+        }
+        if(mapData[i].getId() == "7"){
+            mapData[i].setSearchItem(Item("Fishing rod", "A simple fishing rod.", "noImage", false, 0));
+        }
+        if(mapData[i].getId() == "39"){
+            mapData[i].setSearchItem(Item("Letter", "A hastily written letter which reads: \"Adventurer, beware the vampire who lies within this room! He cannot be killed by ordinary means. Make sure you are prepared before facing him!\"", "noImage", false, 0));
         }
     }
 }

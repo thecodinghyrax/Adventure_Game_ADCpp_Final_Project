@@ -68,7 +68,7 @@
 background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="titleScreen">
      <widget class="QLabel" name="titleLabel">
@@ -415,18 +415,33 @@ color: rgb(0, 0, 0);</string>
        <rect>
         <x>100</x>
         <y>30</y>
-        <width>611</width>
+        <width>620</width>
         <height>181</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>620</width>
+        <height>0</height>
+       </size>
       </property>
       <property name="styleSheet">
        <string notr="true">
 color: rgb(255, 255, 255);
-background-color: transparent;
+background-color: rgba(50,50,50,185);
 font: 20pt &quot;Planewalker&quot;;</string>
       </property>
       <property name="text">
        <string>Adventurer, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -530,7 +545,7 @@ color: rgb(0, 0, 255);</string>
         <x>510</x>
         <y>490</y>
         <width>87</width>
-        <height>24</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
@@ -764,7 +779,8 @@ color: rgb(0, 0, 0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: transparent;
 border:0px;
-font: 24pt &quot;Planewalker&quot;;</string>
+font: 24pt &quot;Planewalker&quot;;
+color: black;</string>
       </property>
      </widget>
      <widget class="QLabel" name="invItemDesc">
@@ -779,14 +795,15 @@ font: 24pt &quot;Planewalker&quot;;</string>
       <property name="font">
        <font>
         <family>Planewalker</family>
-        <pointsize>24</pointsize>
+        <pointsize>22</pointsize>
         <italic>false</italic>
         <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color:transparent;
-font: 24pt &quot;Planewalker&quot;;</string>
+font: 22pt &quot;Planewalker&quot;;
+color: black;</string>
       </property>
       <property name="text">
        <string/>

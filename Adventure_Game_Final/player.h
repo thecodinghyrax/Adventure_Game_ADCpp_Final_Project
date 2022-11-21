@@ -33,6 +33,7 @@ public:
     void pushPlayerStats();
 
     bool hasItemWithName(std::string);
+    Item getItemByName(std::string);
     void giveItem(Item);
 };
 

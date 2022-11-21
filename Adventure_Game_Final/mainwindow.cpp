@@ -188,3 +188,10 @@ void MainWindow::on_toGame_2_clicked()
     ui->stackedWidget->setCurrentIndex(1);
 }
 
+
+void MainWindow::on_invList_itemClicked(QListWidgetItem *item)
+{
+    QString descText = QString::fromStdString(player.getItemByName(item->text().toStdString()).getDescription());
+    ui->invItemDesc->setText(descText);
+}
+

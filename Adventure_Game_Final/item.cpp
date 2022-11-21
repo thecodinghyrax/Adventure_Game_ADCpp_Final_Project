@@ -3,6 +3,7 @@
 Item::Item()
 {
     this->name = "No item";
+    this->description = "No item";
 }
 
 Item::Item(std::string name, std::string description, std::string imagePath, bool canSell, int value)

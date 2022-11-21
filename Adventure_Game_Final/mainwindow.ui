@@ -744,12 +744,15 @@ color: rgb(0, 0, 0);</string>
         <x>60</x>
         <y>120</y>
         <width>256</width>
-        <height>371</height>
+        <height>341</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>20</pointsize>
+        <family>Planewalker</family>
+        <pointsize>24</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="cursor" stdset="0">
@@ -760,18 +763,40 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: transparent;
-border:0px;</string>
+border:0px;
+font: 24pt &quot;Planewalker&quot;;</string>
       </property>
-      <item>
-       <property name="text">
-        <string>test</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>test</string>
-       </property>
-      </item>
+     </widget>
+     <widget class="QLabel" name="invItemDesc">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>110</y>
+        <width>291</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>24</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+font: 24pt &quot;Planewalker&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
    </widget>

@@ -46,6 +46,10 @@ private slots:
 
     void on_pushButton_8_clicked();
 
+    void on_invBtn_clicked();
+
+    void on_toGame_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     Map gameMap;

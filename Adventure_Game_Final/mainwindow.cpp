@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    // Setup stylesheet for widgets
+    qApp->setStyleSheet("QListWidget::item:hover {color: blue;}"
+                        "QListWidget::item:selected {color:gold;}"
+                        "QListWidget::item {background-color:transparent; border:0px;}");
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 MainWindow::~MainWindow()
@@ -165,3 +170,21 @@ void MainWindow::accessArea(Area currentArea, Area destination)
     renderScene(current);
     return;
 }
+
+void MainWindow::on_invBtn_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+    // Create string list for list widget
+    QStringList invStringList = QStringList();
+    for (Item i : player.getInventory()){
+        invStringList << QString::fromStdString(i.getName());
+    }
+    ui->invList->addItems(invStringList);
+}
+
+
+void MainWindow::on_toGame_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+

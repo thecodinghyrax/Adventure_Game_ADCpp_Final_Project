@@ -138,9 +138,11 @@ void MainWindow::on_pushButton_7_clicked()
     ui->descLabel->setText(search);
     ui->descLabel->adjustSize();
     journal.push_back(search);
-    if(current.getSearchItem().getName() != "No item"){
+    if(current.getSearchItem().getName() != "No item" && !current.hasBeenSearched()){
         player.giveItem(current.getSearchItem());
         journal.push_back(QString::fromStdString("You found a " + current.getSearchItem().getName() + ". You put it in your backpack."));
+        current.setSearched(true);
+        gameMap.setAreaSearched(current.getId());
     }
 }
 

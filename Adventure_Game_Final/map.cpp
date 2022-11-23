@@ -124,3 +124,12 @@ void Map::addSearchItems(){
         }
     }
 }
+
+void Map::setAreaSearched(std::string id){
+    for (size_t i = 0; i < mapData.size(); i++){
+        if (mapData[i].getId() == id){
+            mapData[i].setSearched(true);
+            return;
+        }
+    }
+}

@@ -26,4 +26,5 @@ public:
     void setArea(Area);
     void loadAreasFromFile(std::string);
     void addSearchItems();
+    void setAreaSearched(std::string);
 };

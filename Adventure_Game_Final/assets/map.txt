@@ -1,7 +1,7 @@
 ﻿0
 Abandoned Farmhouse
 You find a dilapidated farmhouse.
-You have searched all around and found nothing
+You have searched all around and found an old hammer inside a shed.
 :/assets/bkg-farm.png
 EnemyVectorWillGoHere
 -1,1,-1,-1
@@ -49,7 +49,7 @@ EnemyVectorWillGoHere
 7
 A Clam Still Lake
 You approach a lake but are unable to cross.
-You have searched all around and found nothing
+You have searched all around and found a fishing rod lying on the ground.
 :/assets/bkg-lake.png
 EnemyVectorWillGoHere
 12,-1,2,6

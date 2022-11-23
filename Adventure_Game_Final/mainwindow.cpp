@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    // Setup stylesheet for widgets
+    qApp->setStyleSheet("QListWidget::item:hover {color:red;}"
+                        "QListWidget::item:selected {color:darkred;}"
+                        "QListWidget::item {background-color:transparent; border:0px;}");
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 MainWindow::~MainWindow()
@@ -22,6 +27,7 @@ void MainWindow::renderScene(Area current){
     QPixmap bkg(current.getBackgroundFile().c_str());
     ui->bkgLabel->setPixmap(bkg);
     ui->descLabel->setText(current.getText().c_str());
+    ui->descLabel->adjustSize();
     ui->northBtn->setText("North");
     ui->southBtn->setText("South");
     ui->westBtn->setText("West");
@@ -130,10 +136,13 @@ void MainWindow::on_pushButton_7_clicked()
 {
     QString search = current.getSearchResult().c_str();
     ui->descLabel->setText(search);
+    ui->descLabel->adjustSize();
     journal.push_back(search);
-    if(current.getSearchItem().getName() != "No item"){
+    if(current.getSearchItem().getName() != "No item" && !current.hasBeenSearched()){
         player.giveItem(current.getSearchItem());
         journal.push_back(QString::fromStdString("You found a " + current.getSearchItem().getName() + ". You put it in your backpack."));
+        current.setSearched(true);
+        gameMap.setAreaSearched(current.getId());
     }
 }
 
@@ -142,6 +151,7 @@ void MainWindow::on_pushButton_8_clicked()
 {
     QString camp = "You setup camp for the night and awake in the morning feeling refreshed!";
     ui->descLabel->setText(camp);
+    ui->descLabel->adjustSize();
     journal.push_back(camp);
     // Health will be set back to 100
 }
@@ -149,7 +159,7 @@ void MainWindow::on_pushButton_8_clicked()
 // Attempts to access an area
 void MainWindow::accessArea(Area currentArea, Area destination)
 {
-    if (currentArea.getId() == "19" && destination.getId() == "100"){
+    if (currentArea.getId() == "19" && destination.getId() == "24"){
         if(player.hasItemWithName("Old key")){
             current = destination;
             current.setText("You unlock the door using the key.\n" + current.getText());
@@ -165,3 +175,31 @@ void MainWindow::accessArea(Area currentArea, Area destination)
     renderScene(current);
     return;
 }
+
+void MainWindow::on_invBtn_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+    // Clear list and description label contents
+    ui->invList->clear();
+    ui->invItemDesc->setText("");
+    // Create string list for list widget
+    QStringList invStringList = QStringList();
+    for (Item i : player.getInventory()){
+        invStringList << QString::fromStdString(i.getName());
+    }
+    ui->invList->addItems(invStringList);
+}
+
+
+void MainWindow::on_toGame_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_invList_itemClicked(QListWidgetItem *item)
+{
+    QString descText = QString::fromStdString(player.getItemByName(item->text().toStdString()).getDescription());
+    ui->invItemDesc->setText(descText);
+}
+

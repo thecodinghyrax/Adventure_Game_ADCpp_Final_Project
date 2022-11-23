@@ -68,7 +68,7 @@
 background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="titleScreen">
      <widget class="QLabel" name="titleLabel">
@@ -415,18 +415,33 @@ color: rgb(0, 0, 0);</string>
        <rect>
         <x>100</x>
         <y>30</y>
-        <width>611</width>
+        <width>620</width>
         <height>181</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>620</width>
+        <height>0</height>
+       </size>
       </property>
       <property name="styleSheet">
        <string notr="true">
 color: rgb(255, 255, 255);
-background-color: transparent;
+background-color: rgba(50,50,50,185);
 font: 20pt &quot;Planewalker&quot;;</string>
       </property>
       <property name="text">
        <string>Adventurer, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -522,6 +537,33 @@ color: rgb(0, 0, 255);</string>
       </property>
       <property name="text">
        <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="invBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>490</y>
+        <width>87</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Inventory</string>
       </property>
      </widget>
     </widget>
@@ -675,6 +717,105 @@ background-color: rgb(129, 78, 38);</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="inventory">
+     <widget class="QLabel" name="invBkg">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/assets/bkg-journal.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="toGame_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>520</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>24</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 24pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Return</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="invList">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>256</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>24</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+border:0px;
+font: 24pt &quot;Planewalker&quot;;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="invItemDesc">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>110</y>
+        <width>291</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>22</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+font: 22pt &quot;Planewalker&quot;;
+color: black;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -686,7 +827,7 @@ background-color: rgb(129, 78, 38);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

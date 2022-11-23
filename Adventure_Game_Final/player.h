@@ -24,6 +24,7 @@ public:
     int getPlayerHealth() {return playerHealth;}
     int getPlayerDefense() {return playerDefense;}
     int getWeaponDamage() {return pWeaponDamage;}
+    std::vector<Item> getInventory() {return inventory;}
 
     void setPlayerHealth(int);
     void setPlayerDefense(int);
@@ -32,6 +33,7 @@ public:
     void pushPlayerStats();
 
     bool hasItemWithName(std::string);
+    Item getItemByName(std::string);
     void giveItem(Item);
 };
 

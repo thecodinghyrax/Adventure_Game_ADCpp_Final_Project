@@ -8,6 +8,7 @@
 #include "area.h"
 #include <vector>
 #include "player.h"
+#include "qlistwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -45,6 +46,12 @@ private slots:
     void on_pushButton_7_clicked();
 
     void on_pushButton_8_clicked();
+
+    void on_invBtn_clicked();
+
+    void on_toGame_2_clicked();
+
+    void on_invList_itemClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;

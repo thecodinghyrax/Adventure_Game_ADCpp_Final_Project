@@ -36,6 +36,19 @@ bool Player::hasItemWithName(std::string itemName){
     }
     return false;
 }
+// Returns an item from the player's inventory with the given name
+Item Player::getItemByName(std::string itemName){
+    for (Item i : inventory){
+        if (i.getName() == itemName){
+            return i;
+        }
+    }
+    // If no item is found return a blank item
+    return Item();
+
+}
+
+
 // Gives the player an item
 void Player::giveItem(Item item){
     inventory.push_back(item);

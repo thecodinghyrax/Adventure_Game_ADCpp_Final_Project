@@ -37,24 +37,30 @@ public:
     Battle();
     Battle(bool defending, std::vector<Weapon> weapons, std::vector<Enemy> enemies);
 
+    // setters for the vectors to be used in the battle
     void setEnemies(std::vector<Enemy>);
     void setWeapons(std::vector<Weapon>);
     void setPlayers(std::vector<Player>);
 
+    // functions to check if the vectors are empty
     bool isEnemiesEmpty();
     bool isWeaponsEmpty();
 
+    // functions to create the entities and weapons
     Enemy createEnemy();
     Weapon createWeapon();
     void createPlayer();
 
+    // setters for the entities and weapons
     void setEnemy();
     void setWeapon();
     void setPlayer();
 
+    // setters for the temperary health of the entities
     void setPlayerTemp();
     void setEnemyTemp();
 
+    // functions for the actions made by the entities
     void playerAttack();
     void playerDefend();
     //void playerItem();

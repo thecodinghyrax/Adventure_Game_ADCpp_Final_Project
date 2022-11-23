@@ -17,14 +17,17 @@ void Battle::setPlayers(std::vector<Player> players) {
     this->player = players;
 }
 
+// checks if the enemies vector is empty
 bool Battle::isEnemiesEmpty() {
     return enemies.size() == 0;
 }
 
+// checks if the weapons vector is empty
 bool Battle::isWeaponsEmpty() {
     return weapons.size() == 0;
 }
 
+// returns an enemy for the battle if the enemy vector is not empty
 Enemy Battle::createEnemy() {
     if (!isEnemiesEmpty()) {
         srand(time(0));
@@ -33,6 +36,7 @@ Enemy Battle::createEnemy() {
     return Enemy();
 }
 
+// returns a random weapon if the vector if weapons is not empty
 Weapon Battle::createWeapon() {
     if (!isWeaponsEmpty()) {
         srand(time(0));
@@ -41,29 +45,35 @@ Weapon Battle::createWeapon() {
     return Weapon();
 }
 
+// creates the player for the battle
 void Battle::createPlayer() {
     testPlayer = player.front();
 
 }
 
+// sets the enemy for the battle
 void Battle::setEnemy() {
     testEnemy = Battle::createEnemy();
 }
 
+// sets the enemy's weapon for the battle
 void Battle::setWeapon() {
     testWeapon = Battle::createWeapon();
 }
 
+// sets the hp of the player for the battle
 void Battle::setPlayerTemp() {
-    playerTempHP = testPlayer.getPlayerHealth();
-    playerTempDef = testPlayer.getPlayerDefense();
+    playerTempHP = testPlayer.getEntityHealth();
+    playerTempDef = testPlayer.getEntityDefense();
 }
 
+// sets the hp of the enemy for the battle
 void Battle::setEnemyTemp() {
-    enemyTempHP = testEnemy.getHealth();
-    enemyTempDef = testEnemy.getDefense();
+    enemyTempHP = testEnemy.getEntityHealth();
+    enemyTempDef = testEnemy.getEntityDefense();
 }
 
+// function to determine if the player's attack hits and the damage
 void Battle::playerAttack() {
 
     srand(time(0));
@@ -72,13 +82,13 @@ void Battle::playerAttack() {
     // checks if enemy is defending
     if (enemyDefending) {
         // checks if attack hits
-        if (hitchance > (testEnemy.getDefense() * 2)) {
+        if (hitchance > (testEnemy.getEntityDefense() * 2)) {
             // attack hits
             enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
         }
     }
     else {
-        if (hitchance > testEnemy.getDefense()) {
+        if (hitchance > testEnemy.getEntityDefense()) {
             // attack hits
             enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
         }
@@ -89,12 +99,14 @@ void Battle::playerAttack() {
 
 }
 
+// function to change the defend variable should the player decide to defend for the round
 void Battle::playerDefend() {
 
     bool playerDefending = true;
 
 }
 
+// function to decide and take the enemy's turn
 void Battle::enemyTurn() {
     srand(time(0));
     int choice = (rand() % 10 + 1);
@@ -106,7 +118,7 @@ void Battle::enemyTurn() {
         // checks if the player is defending
         if (playerDefending) {
             // if player is defending, check if the attack hits
-            if (hitchance > (testPlayer.getPlayerDefense() * 2)) {
+            if (hitchance > (testPlayer.getEntityDefense() * 2)) {
                 // attack hits
                 playerTempHP = playerTempHP - testWeapon.getDamage();
             }
@@ -115,7 +127,7 @@ void Battle::enemyTurn() {
         }
         else {
             // checks if attack hits
-            if (hitchance > testPlayer.getPlayerDefense()) {
+            if (hitchance > testPlayer.getEntityDefense()) {
                 // attack hits
                 playerTempHP = playerTempHP - testWeapon.getDamage();
             }

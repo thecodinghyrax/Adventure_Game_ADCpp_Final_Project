@@ -12,6 +12,7 @@ SOURCES += \
     area.cpp \
     battle.cpp \
     enemy.cpp \
+    entity.cpp \
     item.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -23,6 +24,7 @@ HEADERS += \
     area.h \
     battle.h \
     enemy.h \
+    entity.h \
     item.h \
     mainwindow.h \
     map.h \

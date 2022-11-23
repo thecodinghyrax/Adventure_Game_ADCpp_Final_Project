@@ -2,27 +2,20 @@
 
 // Initialize new player
 Player::Player() {
-    this->playerHealth = 20;
-    this->playerDefense = 10;
+    this->entityHealth = 20;
+    this->entityDefense = 10;
     this->pWeaponDamage = 6;
-}
-
-void Player::setPlayerHealth(int health) {
-    this->playerHealth = health;
-}
-
-void Player::setPlayerDefense(int defense) {
-    this->playerDefense = defense;
 }
 
 void Player::setWeaponDamage(int damage) {
     this->pWeaponDamage = damage;
 }
 
+// pushes the player stats into the game upon startup
 void Player::pushPlayerStats() {
     Player player;
-    player.setPlayerHealth(20);
-    player.setPlayerDefense(10);
+    player.setEntityHealth(20);
+    player.setEntityDefense(10);
     player.setWeaponDamage(6);
     p.push_back(player);
 }

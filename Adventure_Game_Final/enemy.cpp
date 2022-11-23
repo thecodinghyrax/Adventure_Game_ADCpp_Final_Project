@@ -13,28 +13,21 @@ void Enemy::setType(std::string type) {
     this->type = type;
 }
 
-void Enemy::setHealth(int health) {
-    this->health = health;
-}
-
-void Enemy::setDefense(int defense) {
-    this->defense = defense;
-}
-
+// function to push the available enemies into the game upon startup
 void Enemy::pushEnemies() {
 
     Enemy skeleton;
     skeleton.setId("S1");
     skeleton.setType("Skeleton");
-    skeleton.setHealth(10);
-    skeleton.setDefense(5);
+    skeleton.setEntityHealth(10);
+    skeleton.setEntityDefense(5);
     enemyVector.push_back(skeleton);
 
     Enemy bandit;
     bandit.setId("B1");
     bandit.setType("Bandit");
-    bandit.setHealth(7);
-    bandit.setDefense(8);
+    bandit.setEntityHealth(7);
+    bandit.setEntityDefense(8);
     enemyVector.push_back(bandit);
 
 }

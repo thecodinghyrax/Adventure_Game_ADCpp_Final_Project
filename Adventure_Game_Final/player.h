@@ -3,13 +3,11 @@
 #include <string>
 #include <vector>
 #include "item.h"
+#include "entity.h"
 
-class Player {
+class Player : public Entity{
 private:
-    // holds health
-    int playerHealth;
-    // holds defense
-    int playerDefense;
+
     // holds weapon damage
     int pWeaponDamage;
     // vector to hold player object
@@ -21,15 +19,14 @@ public:
     Player();
     Player(int playerHealth, int playerDefense, int pWeaponDamage);
 
-    int getPlayerHealth() {return playerHealth;}
-    int getPlayerDefense() {return playerDefense;}
+    // getter for weapon damage (only to be used in testing as weapon damage will later be determined by the item itself)
     int getWeaponDamage() {return pWeaponDamage;}
     std::vector<Item> getInventory() {return inventory;}
 
-    void setPlayerHealth(int);
-    void setPlayerDefense(int);
+    // setter for weapon damage (only to be used in testing as weapon damage will later be determined by the item itself)
     void setWeaponDamage(int);
 
+    // pushes the base player stats into the game upon startup
     void pushPlayerStats();
 
     bool hasItemWithName(std::string);

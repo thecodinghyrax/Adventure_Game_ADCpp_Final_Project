@@ -53,3 +53,13 @@ Item Player::getItemByName(std::string itemName){
 void Player::giveItem(Item item){
     inventory.push_back(item);
 }
+
+// Take an item from the player
+void Player::takeItem(std::string itemName){
+    for (size_t i = 0; i < inventory.size(); i++){
+        if (inventory[i].getName() == itemName){
+            // Remove item at the i index
+            inventory.erase(inventory.begin() + i);
+        }
+    }
+}

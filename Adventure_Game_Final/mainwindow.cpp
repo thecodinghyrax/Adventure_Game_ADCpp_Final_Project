@@ -203,3 +203,60 @@ void MainWindow::on_invList_itemClicked(QListWidgetItem *item)
     ui->invItemDesc->setText(descText);
 }
 
+
+void MainWindow::on_useBtn_clicked()
+{
+    // If no item is selected, do nothing
+    if (!ui->invList->selectedItems().empty()){
+        QString selectedItemName = ui->invList->selectedItems()[0]->text();
+        ui->stackedWidget->setCurrentIndex(1);
+        if (selectedItemName == "Fishing rod" && current.getId() == "7"){
+            player.giveItem(Item("Raw fish","An uncooked fish.","NoImage",true,5));
+            current.setText("You fish for a while and catch something!");
+            journal.push_back(QString::fromStdString(current.getText()));
+            renderScene(current);
+            return;
+        }
+        if (selectedItemName == "Raw fish" && current.getId() == "16"){
+            // TODO give player a potion
+            player.takeItem("Raw fish");
+            current.setText("You use materials you find in the cottage and the fish to craft a disgusting but effective health potion.");
+            journal.push_back(QString::fromStdString(current.getText()));
+            renderScene(current);
+            return;
+        }
+        if (selectedItemName == "Woodcutter's axe"){
+            if (current.getId() == "1" || current.getId() == "3" || current.getId() == "6" || current.getId() == "12" ||
+                    current.getId() == "13" || current.getId() == "14" || current.getId() == "18"){
+                player.giveItem(Item("Cut log","A log cut from a tree.","NoImage",true,5));
+                current.setText("You cut down a nearby tree a get a log.");
+                journal.push_back(QString::fromStdString(current.getText()));
+                renderScene(current);
+                return;
+            }
+        }
+        if (selectedItemName == "Cut log" && current.getId() == "10"){
+            player.takeItem("Cut log");
+            player.giveItem(Item("Cooked steak","A cooked steak, medium-rare.","NoImage",false,0));
+            current.setText("You give the man a log and ask him to make you a stake. He takes it and goes into his hut. He returns a while later and hands you a big, mouth-watering steak.");
+            journal.push_back(QString::fromStdString(current.getText()));
+            renderScene(current);
+            return;
+        }
+        if (selectedItemName == "Cooked steak" && current.getId() == "10"){
+            player.takeItem("Cooked steak");
+            player.giveItem(Item("Wooden stake","A stake, useful for killing vampires or pitching a tent.","NoImage",false,0));
+            current.setText("You explain to the man that you meant a wooden stake. He apologizes for his miSTAKE and goes back into his hut. He returns with a carved wooden stake.");
+            journal.push_back(QString::fromStdString(current.getText()));
+            renderScene(current);
+            return;
+        }
+
+
+        // If the item cannot be used, give default message
+        current.setText("Nothing interesting happens.");
+        renderScene(current);
+    }
+
+}
+

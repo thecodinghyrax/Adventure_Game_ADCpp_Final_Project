@@ -56,7 +56,7 @@ EnemyVectorWillGoHere
 +
 10
 The Towns Rotten Dump
-A come upon a putrid field or refuse. This must be the towns dumping grounds.
+You come upon a putrid field of refuse. This must be the towns dumping grounds. You see an odd man nearby who is carving something out of wood.
 You have searched all around and find some treasure.
 :/assets/bkg-dump.png
 EnemyVectorWillGoHere
@@ -65,7 +65,7 @@ EnemyVectorWillGoHere
 11
 A Small Village
 You wonder into a small local village. No one seems to be around.
-You have searched all around and found nothing
+You have searched all around and found a woodcutter's axe.
 :/assets/bkg-town.png
 EnemyVectorWillGoHere
 16,12,6,10

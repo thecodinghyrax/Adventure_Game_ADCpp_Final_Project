@@ -35,6 +35,7 @@ public:
     bool hasItemWithName(std::string);
     Item getItemByName(std::string);
     void giveItem(Item);
+    void takeItem(std::string);
 };
 
 #endif // PLAYER_H

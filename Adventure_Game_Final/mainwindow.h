@@ -53,6 +53,8 @@ private slots:
 
     void on_invList_itemClicked(QListWidgetItem *item);
 
+    void on_useBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
     Map gameMap;

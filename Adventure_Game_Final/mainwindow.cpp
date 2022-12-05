@@ -3,6 +3,7 @@
 #include "enemy.h"
 #include "weapons.h"
 #include "player.h"
+#include "battle.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -45,10 +46,6 @@ void MainWindow::on_beginButton_clicked()
     ui->stackedWidget->setCurrentIndex(1); // Index 1 will always be the location scene
 
     // dont mind me
-    Enemy testE;
-    testE.pushEnemies();
-    Weapon testW;
-    testW.pushWeapons();
     Player testP;
     testP.pushPlayerStats();
 }
@@ -258,5 +255,204 @@ void MainWindow::on_useBtn_clicked()
         renderScene(current);
     }
 
+}
+
+Battle ex;
+
+void MainWindow::on_startBattle_clicked()
+{
+
+    ui->stackedWidget->setCurrentIndex(5);
+
+    Enemy testE;
+    testE.pushEnemies();
+    Weapon testW;
+    testW.pushWeapons();
+    ex.setEnemies(testE.enemyVector);
+    ex.setWeapons(testW.weaponVector);
+
+    //ex.createPlayer();
+    ex.setEnemy();
+    ex.setWeapon();
+    ex.setPlayerTemp();
+    ex.setEnemyTemp();
+    ex.setEnemyType();
+    ex.setEnemyWeaponType();
+
+    std::string eName = ex.enemyType;
+    std::string wName = ex.enemyWeaponType;
+    QString openingText = QString::fromStdString("Before you stands a " + eName + " readying their " + wName + ". You only have a moment to react, what do you do?");
+    ui->label_6->setText(openingText);
+}
+
+void MainWindow::on_attack_clicked()
+{
+    bool testDef = ex.isEnemyDefending();
+    ex.playerAttack();
+    int val = ui->progressBar_3->value();
+    int dmg = val - ex.enemyTempHP;
+    int hpRem = val - dmg;
+    ui->progressBar_3->setValue(hpRem);
+
+    ex.enemyTurn();
+    int val2 = ui->progressBar_2->value();
+    int dmg2 = val2 - ex.playerTempHP;
+    int hpRem2 = val2 - dmg2;
+    ui->progressBar_2->setValue(hpRem2);
+    bool testDef2 = ex.isEnemyDefending();
+
+    QString text;
+
+    if (hpRem <= 0) {
+        ui->progressBar_3->setValue(0);
+        text = QString::fromStdString("Your aim is true, your foe falls to the ground lifeless. This battle is won...(Use the leave button to exit the battle)");
+        // todo: something to make this feel more impactful.
+
+    }
+    else if (hpRem2 <= 0) {
+        ui->progressBar_2->setValue(0);
+        text = QString::fromStdString("Your foe strikes...hitting your heart. As your body falls to the ground lifeless, you see your foe standing triumphantly...(Use the leave button to exit the battle)");
+    }
+    else {
+
+        if (hpRem < val) {
+            text = QString::fromStdString("You attempt to strike your foe. You are successful. ");
+        }
+        else if (testDef == true && hpRem == val) {
+            text = QString::fromStdString("You attempt to strike your foe, they parry the incoming attack with finesse. ");
+        }
+        else {
+            text = QString::fromStdString("You attempt to strike your foe, they move slightly and the attack goes wide. ");
+        }
+
+        if (hpRem2 < val2) {
+            text = text + QString::fromStdString("Your foe responds with a counterattack. It hits you before you can react.");
+        }
+        else if (testDef2 == true) {
+            text = text + QString::fromStdString("Your foe braces for impact, waiting for an attack.");
+        }
+        else {
+            text = text + QString::fromStdString("Your foe responds with a counterattack. The sharp metal misses by a hairs width.");
+        }
+
+    }
+
+
+    ui->label_6->setText(text);
+
+}
+
+void MainWindow::on_heavyAttack_clicked()
+{
+
+    ex.enemyTurn();
+    int val = ui->progressBar_2->value();
+    int dmg = val - ex.playerTempHP;
+    int hpRem = val - dmg;
+    ui->progressBar_2->setValue(hpRem);
+    bool testDef = ex.isEnemyDefending();
+
+    ex.playerHeavyAttack();
+    int val2 = ui->progressBar_3->value();
+    int dmg2 = val2 - ex.enemyTempHP;
+    int hpRem2 = val2 - dmg2;
+    ui->progressBar_3->setValue(hpRem2);
+
+    QString text;
+    if (hpRem2 <= 0) {
+        ui->progressBar_3->setValue(0);
+        text = QString::fromStdString("Your aim is true, your foe falls to the ground lifeless. This battle is won...(Use the leave button to exit the battle)");
+        // todo: something to make this feel more impactful.
+
+    }
+    else if (hpRem <= 0) {
+        ui->progressBar_2->setValue(0);
+        text = QString::fromStdString("Your foe strikes...hitting your heart. As your body falls to the ground lifeless, you see your foe standing triumphantly...(Use the leave button to exit the battle)");
+    }
+    else {
+
+        text = QString::fromStdString("You begin to wind up for a powerful attack. ");
+        if (testDef == true) {
+            text = text + QString::fromStdString("Your foe notices the wind up and braces for the impact. ");
+        }
+        else if (hpRem < val) {
+            text = text + QString::fromStdString("Your foe notices an opening and attempts to strike you, they are successful. ");
+        }
+        else {
+            text = text + QString::fromStdString("Your foe notices an opening and attempts to strike you, they miss. ");
+        }
+
+        if (hpRem2 < val2) {
+            text = text + QString::fromStdString("Your attack is ready and strikes its target, taking a part of your foe with it.");
+        }
+        else if (testDef == true && hpRem2 == val2) {
+            text = text + QString::fromStdString("Your attack is ready and strikes its target, however, your foe parries the blow.");
+        }
+        else {
+            text = text + QString::fromStdString("Your attack is ready and moves with extreme force, barely missing its mark.");
+        }
+
+    }
+
+
+    ui->label_6->setText(text);
+
+}
+
+void MainWindow::on_defend_clicked()
+{
+    ex.playerDefend();
+
+    ex.enemyTurn();
+    int val = ui->progressBar_2->value();
+    int dmg = val - ex.playerTempHP;
+    int hpRem = val - dmg;
+    ui->progressBar_2->setValue(hpRem);
+
+    QString text;
+    if (ex.enemyTempHP <= 0) {
+        ui->progressBar_3->setValue(0);
+        text = QString::fromStdString("Your aim is true, your foe falls to the ground lifeless. This battle is won...(Use the leave button to exit the battle)");
+        // todo: something to make this feel more impactful.
+
+    }
+    else if (hpRem <= 0) {
+        ui->progressBar_2->setValue(0);
+        text = QString::fromStdString("Your foe strikes...hitting your heart. As your body falls to the ground lifeless, you see your foe standing triumphantly...(Use the leave button to exit the battle)");
+    }
+    else {
+
+        text = QString::fromStdString("You brace yourself, anticipating an attack. ");
+        if (hpRem < val) {
+            text = text + QString::fromStdString("Your foe attacks, slipping past your guard and drawing blood.");
+        }
+        else if (ex.isEnemyDefending() == true) {
+            text = text + QString::fromStdString("Your foe braces for an attack, waiting out your guard.");
+        }
+        else {
+            text = text + QString::fromStdString("Your foe attacks, you manage to block the incoming blow with ease.");
+        }
+
+    }
+
+    ui->label_6->setText(text);
+
+}
+
+void MainWindow::on_useItem_clicked()
+{
+ // need to implement
+}
+
+void MainWindow::on_leaveBattle_clicked()
+{
+    if (ex.playerTempHP <= 0) {
+        ui->stackedWidget->setCurrentIndex(3);
+    }
+    else {
+        ui->stackedWidget->setCurrentIndex(1);
+    }
+    int max = ui->progressBar_3->maximum();
+    ui->progressBar_3->setValue(max);
 }
 

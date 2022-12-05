@@ -12,12 +12,8 @@ private:
     bool playerDefending;
     // boolean to tell if the enemy is defending
     bool enemyDefending;
-    // player temp health
-    int playerTempHP;
     // player temp defense
     int playerTempDef;
-    // enemy temp health
-    int enemyTempHP;
     // enemy temp defense
     int enemyTempDef;
     // enemy
@@ -37,6 +33,15 @@ public:
     Battle();
     Battle(bool defending, std::vector<Weapon> weapons, std::vector<Enemy> enemies);
 
+    // player temp health
+    int playerTempHP;
+    // enemy temp health
+    int enemyTempHP;
+    // variable to hold type of enemy
+    std::string enemyType;
+    // variable to hold type of weapon enemy weilds
+    std::string enemyWeaponType;
+
     void setEnemies(std::vector<Enemy>);
     void setWeapons(std::vector<Weapon>);
     void setPlayers(std::vector<Player>);
@@ -51,14 +56,22 @@ public:
     void setEnemy();
     void setWeapon();
     void setPlayer();
+    void setEnemyType();
+    void setEnemyWeaponType();
 
     void setPlayerTemp();
     void setEnemyTemp();
 
+    bool isEnemyDefending();
+
     void playerAttack();
     void playerDefend();
+    void playerHeavyAttack();
     //void playerItem();
     void enemyTurn();
+
+    void endBattle();
+    void start();
 
 };
 

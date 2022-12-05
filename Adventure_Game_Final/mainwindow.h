@@ -55,6 +55,18 @@ private slots:
 
     void on_useBtn_clicked();
 
+    void on_startBattle_clicked();
+
+    void on_attack_clicked();
+
+    void on_defend_clicked();
+
+    void on_heavyAttack_clicked();
+
+    void on_useItem_clicked();
+
+    void on_leaveBattle_clicked();
+
 private:
     Ui::MainWindow *ui;
     Map gameMap;

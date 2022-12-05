@@ -1,6 +1,6 @@
 ﻿0
 Abandoned Farmhouse
-You find a dilapidated farmhouse.
+In the clearing you find a dilapidated farmhouse. The land around the house has become dense and quite impassible. Who ever used to live here is long since gone. You wonder what could have caused the owner to abandon their home and their livelihood. Stepping closer you see a sign nailed on to what is left of a front door. It reads “Beware, he came for us, and he will come for you as well!”.  What could this mean you wonder?
 You have searched all around and found an old hammer inside a shed.
 :/assets/bkg-farm.png
 EnemyVectorWillGoHere
@@ -8,7 +8,7 @@ EnemyVectorWillGoHere
 +
 1
 A Dark Path
-You find a dark path through the woods
+You find a well-worn path through the woods. The ground is rutted with evenly spaced tracks as if a cart had passed through here often. To the west there seems to be a clearing. The road also branches off to the north. You listen for a moment but can only hear the sound of trees rustling and the occasional call of a lonely raven. 
 You have searched all around and found nothing
 :/assets/bkg-path1.png
 EnemyVectorWillGoHere
@@ -16,7 +16,7 @@ EnemyVectorWillGoHere
 +
 2
 Base camp
-Adventurer, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?
+You find yourself in the midst of your cozy little camp. It’s not home, but it will suffice for the time being. This felt like a suitable place to strike out from to explore the surrounding countryside. You quietly wonder if the life of an adventure is still worth it. You sigh but reside yourself to the fact that this life is all you’ve ever known. This is who you are so you’d best make the most of it. From your camp, there is a road to the west and a small path to the east. You surmise that there must be a body of water to the north as you have heard the sounds of lapping waves coming from that direction.   
 You have searched all around and found nothing
 :/assets/bkg-camp.png
 EnemyVectorWillGoHere
@@ -24,7 +24,7 @@ EnemyVectorWillGoHere
 +
 3
 Another Dark Path
-You find another dark path through the woods
+The path that leads from your camp is quite narrow. At times it’s hard to tell if it’s an actual path at all. You occasionally notice areas of flattened grass and broken limbs as if something had been dragged through here. The path continues on to the east but it’s hard to tell if it will lead anywhere. 
 You have searched all around and found nothing
 :/assets/bkg-path2.png
 EnemyVectorWillGoHere
@@ -32,15 +32,15 @@ EnemyVectorWillGoHere
 +
 4
 A Clearing in the woods
-A come upon a clearing in the woods. Something was buried here recently.
-You find a strange key.
+A come upon a small clearing in the woods. The path appears to stop here. Looking around you notice some freshly disturbed soil near the base of a giant oak tree. It's clear that someone had been here recently. Whatever they were up to, they certainly didn’t want anyone near by to see them.  
+You move away the freshly disturbed soil and find the body of a peasant judging by his humble clothes and calloused hands. It looks like he died by a gash in his neck but strangely, there is little blood to be found. Around his wrist, you find a simple rope bracelet with a strange key attached to it. Something tells you this key may be important later, so you remove it from his body and place it in your pouch. 
 :/assets/bkg-grave.png
 EnemyVectorWillGoHere
 -1,-1,-1,3
 +
 6
 A Well Traveled Path
-You find a path that looks heavily traveled. 
+You continue on a well-traveled path. Up ahead to the north you can hear the bustling of a small village. The sounds of a blacksmiths hammer ring out, carts creak and the odd whinny of a horse can be heard but interestingly, no human voices reach your ears. You have an odd feeling about this. 
 You have searched all around and found nothing
 :/assets/bkg-path3.png
 EnemyVectorWillGoHere
@@ -48,15 +48,15 @@ EnemyVectorWillGoHere
 +
 7
 A Clam Still Lake
-You approach a lake but are unable to cross.
-You have searched all around and found a fishing rod lying on the ground.
+The woods clear and you find yourself at the shore of a lake. This must have been what you were hearing from your camp. The lake isn’t huge, but you see no way to get across it. You stand for a moment and take in the sights. You observe the occasional fish jumping from the water and instantly regret not packing your fishing poll on this adventure. 
+You have searched all around and found a fishing rod lying on the ground. What luck.
 :/assets/bkg-lake.png
 EnemyVectorWillGoHere
 12,-1,2,6
 +
 10
 The Towns Rotten Dump
-You come upon a putrid field of refuse. This must be the towns dumping grounds. You see an odd man nearby who is carving something out of wood.
+You come upon a putrid field of refuse. This must be the towns dumping grounds. You see an odd, filthy man nearby who is carving something out of wood. You notice a small shack nearby. You begin to wonder if this is where he lives. You greet the man, but he doesn’t seem to be interested in you. He bluntly replies, “If you ain’t got wood for me than I have nothing to say to you, now scram!”. What a grouch you think to yourself. 
 You have searched all around and find some treasure.
 :/assets/bkg-dump.png
 EnemyVectorWillGoHere
@@ -64,15 +64,15 @@ EnemyVectorWillGoHere
 +
 11
 A Small Village
-You wonder into a small local village. No one seems to be around.
-You have searched all around and found a woodcutter's axe.
+You wander into a small local village. There are people about but everyone appears to be scared and no one will speak with you. Every person you approach quickly turns from you and shuts themselves indoors. Some even drop what they were carrying to flee. What happened to these people you wonder? Something has them spooked but you realize your not going to get any information here. 
+You have searched all around and found a woodcutter's axe dropped by one of the villagers. You figure you migth as well take this with you. You never know when an axe could come in handy.
 :/assets/bkg-town.png
 EnemyVectorWillGoHere
 16,12,6,10
 +
 12
 A Path Connecting A Village And A Forest
-This is a path that goes from the village to a nearby forest.
+You find a path that leads from the village to a nearby forest. The forest is dark and a mist hangs in the air. You can see the lake to the south and the path also heads deeper into the woods to the east. You have a very uneasy feeling being here. 
 You have searched all around and found nothing
 :/assets/bkg-path4.png
 EnemyVectorWillGoHere
@@ -80,7 +80,7 @@ EnemyVectorWillGoHere
 +
 13
 A Misty Forest 
-You wondered into a dark and misty forest.
+The forest continues on growing darker as you go. The mist is now so thick, you can barely see ten feet in front of you. You’re beginning to wonder if you made a mistake by traveling so far into this forest. Off in the distance, you can hear the sound of wolves howling. The way to the south is impassable but the forest continues on to the north and to the east.  
 You have searched all around and found nothing
 :/assets/bkg-forest1.png
 EnemyVectorWillGoHere
@@ -88,7 +88,7 @@ EnemyVectorWillGoHere
 +
 14
 More Misty Forest 
-You wondered further into a dark and misty forest.
+You wander further into a dark and misty forest and now the overgrowth is so thick that you can no longer continue on to the west or the south. To the north, you can barely make out what looks like a stone path. Why would there be a stone path in the middle of the woods you wonder? Your only option now is to follow the path to the north or head back the way you came. 
 You have searched all around and found nothing
 :/assets/bkg-forest2.png
 EnemyVectorWillGoHere
@@ -96,7 +96,7 @@ EnemyVectorWillGoHere
 +
 16
 A Small Alchemist Cottage
-You discover a small cottage belonging to a local alchemist.
+You head north from the village for some time before finding a winding path ending at a small cottage. Judging by the hanging sign in the front, you determine that this must be the local alchemist shop. You decide to head in and to your surprise, you find it completely empty. Calling out for the shop owner brings you no response. You could really use some extra healing potions as you have used nearly all of the ones you had with you.  Where could that shop owner be you wonder?
 You have searched the alchemist house and found 4 health potions
 :/assets/bkg-house.png
 EnemyVectorWillGoHere
@@ -104,7 +104,7 @@ EnemyVectorWillGoHere
 +
 18
 More Misty Forest 
-You wondered further into a dark and misty forest.
+The path leads to a dead end. Looking around you can’t see any way through this part of the woods. Hearing a rustling sound to the east you head over cautiously to investigate. You draw back your weapon and slash at the overgrowth where you heard the sound only to strike what feels like a wooden door. A rabbit suddenly darts from the underbrush and scampers off into the woods. You take a moment to calm down and allow yourself a chuckle for your foolishness. You turn your attention back to the object you struck, and it is indeed a door leading through a stone wall you hadn’t noticed before.
 You have searched all around and found nothing
 :/assets/bkg-forest3.png
 EnemyVectorWillGoHere
@@ -112,7 +112,7 @@ EnemyVectorWillGoHere
 +
 19
 An Evil Castle On A Hill
-You stumble upon a grand but evil looking castle.
+You emerge from the woods to find yourself standing on a stone walkway leading up to an imposing castle. The base is cloaked in mist, but the towers of the castle extend high into the moon lit sky. Was this place somehow responsible for the frightened villagers? It certainly looks like a place where evil would lurk. You head up the walkway and approach the entrance. Torches flicker in the tower windows and ravens call down to you from the castle walls. Surely someone or something must be here. Now, how to get in you wonder?
 You have searched all around and found a door with a key hole.
 :/assets/bkg-end-castle.png
 EnemyVectorWillGoHere
@@ -120,7 +120,7 @@ EnemyVectorWillGoHere
 +
 24
 Castle Entrance
-You find yourself inside a dark castle. There is a hallway leading north.
+You find yourself inside the entry way of the castle. The walls are bare stone with only some decaying tapestries for decoration. Apart from the sheet covered tables and chairs there isn't much to see. This room hasn’t been used for a very long time. Looking around, you find the only path forward is a hallway leading to the north. 
 You have searched all around and found nothing
 :/assets/bkg-hall1.png
 EnemyVectorWillGoHere
@@ -128,7 +128,7 @@ EnemyVectorWillGoHere
 +
 29
 Castle Hallway
-You are in a hallway that heads north and west.
+You cautiously enter the hallway but find it empty. The hallway continues on to the north and also branches off to the west. You stop to listen for a moment. The only sounds you can hear are the scurrying of rats and whistling of the wind through the corridors.  You think you may have heard a faint scream off to the north but you can’t be sure. This place is starting to feel like a maze. 
 You have searched all around and found nothing
 :/assets/bkg-hall4.png
 EnemyVectorWillGoHere
@@ -136,7 +136,7 @@ EnemyVectorWillGoHere
 +
 28
 Castle West Hallway
-This hallway leads further to the west.
+The western hallway seems to go on forever. The darkness starts to play tricks on your eyes. Is there movement up ahead? You feel like you might be getting turned around but you press on anyway. 
 You have searched all around and found nothing
 :/assets/bkg-hall3.png
 EnemyVectorWillGoHere
@@ -144,7 +144,7 @@ EnemyVectorWillGoHere
 +
 27
 Castle Dead End
-You have reached a dead end. There is no way to proceed in this direction.
+You come to the end of the hallway and are stopped by a dead end. Who makes a hallway that goes nowhere you wonder? You look around and find traces of blood on the ground and signs of a struggle but no body. What evil has happened in this desolate hallway? What’s going on in this castle. You put your back to the wall and squint your eyes to make sure no one has snuck up behind you. The coast seems clear for now, but you remain uneasy. 
 You have searched all around and found nothing
 :/assets/bkg-deadend.png
 EnemyVectorWillGoHere
@@ -152,7 +152,7 @@ EnemyVectorWillGoHere
 +
 34
 Castle Hallway North
-This hallway leads to the north and east. You see a faint light to the west
+The hallway here leads to the north and also to the east. You hear the sound of someone singing to the north. It’s a mans voice and he is singing what sounds like an ancient hymn. You can’t make out the words but there is a darkness in his voice. Off to the east you see a faint light of a flickering torch. The air smells stale and damp.
 You have searched all around and found nothing
 :/assets/bkg-hall2.png
 EnemyVectorWillGoHere
@@ -160,16 +160,16 @@ EnemyVectorWillGoHere
 +
 35
 Castle Another Dead End
-A have reached another dead end. There is a treasure chest in the corner of the room.
-You search the chest an find a wooden stake.
+You travel down the hallway and reach another dead end. This time a torch on the wall illuminates a treasure chest in the corner of the room. You approach the chest hoping this isn’t some sort of trap. Who leaves their valuables at the end of a random hallway you wonder? Regardless of the odd placement of the chest, the possibilities of what could be inside are too good to pass up. 
+You search the chest but curiously find nothing but a letter in the very bottom.
 :/assets/bkg-deadend-treasure.png
 EnemyVectorWillGoHere
 -1,-1,-1,34
 +
 39
 Castle Throne Room
-You enter what appears to be a throne room. Sitting on the throne is a vampire.
-You searh the room and find a letter.
+You enter what appears to be a throne room. Sitting on a grand throne is a well dress man with haunting eyes. He stops singing as soon as you walk in the room. “And who do we have here?” he asked. “I’m not here for a chat” you answer, “I’m here to stop you from hurting anyone else”. “Oh, we’re a hero are we?” he says, “How terribly cliched”. “Fine, lets get this over with, shall we?”. 
+You search the room and a coffer of gold coins. There is enough here to last you a lifetime. With this amount of gold, I wouldn’t have to go adventuring ever again. Could I really walk away from this life? I guess we’ll see. 
 :/assets/bkg-boss-room.png
 EnemyVectorWillGoHere
 -1,-1,34,-1

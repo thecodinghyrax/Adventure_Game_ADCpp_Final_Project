@@ -228,6 +228,11 @@ void MainWindow::on_useBtn_clicked()
         if (selectedItemName == "Woodcutter's axe"){
             if (current.getId() == "1" || current.getId() == "3" || current.getId() == "6" || current.getId() == "12" ||
                     current.getId() == "13" || current.getId() == "14" || current.getId() == "18"){
+                for(auto item : player.getInventory()){
+                    if(item.getName() == "Cut log"){
+                        player.takeItem("Cut log");
+                    }
+                }
                 player.giveItem(Item("Cut log","A log cut from a tree.","NoImage",true,5));
                 current.setText("You cut down a nearby tree a get a log.");
                 journal.push_back(QString::fromStdString(current.getText()));

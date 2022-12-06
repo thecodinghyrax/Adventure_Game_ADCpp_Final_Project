@@ -34,7 +34,7 @@ public:
     Battle(bool defending, std::vector<Weapon> weapons, std::vector<Enemy> enemies);
 
     // player temp health
-    int playerTempHP;
+    int playerTempHP = 100;
     // enemy temp health
     int enemyTempHP;
     // variable to hold type of enemy

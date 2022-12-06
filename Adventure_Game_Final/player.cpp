@@ -3,7 +3,7 @@
 // Initialize new player
 Player::Player() {
     this->healthPotions = 5;
-    this->playerHealth = 200;
+    this->playerHealth = 100;
     this->playerDefense = 10;
     this->pWeaponDamage = 34;
 }

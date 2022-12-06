@@ -30,6 +30,7 @@ public:
     void setDamage(int);
 
     void pushWeapons();
+    void pushBossWeapon();
 };
 
 

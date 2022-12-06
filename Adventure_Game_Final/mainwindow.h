@@ -63,7 +63,7 @@ private slots:
 
     void on_heavyAttack_clicked();
 
-    void on_useItem_clicked();
+    void on_usePotion_clicked();
 
     void on_leaveBattle_clicked();
 

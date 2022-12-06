@@ -39,6 +39,7 @@ public:
     void setWeapons(std::vector<Weapon>);
 
     void pushEnemies();
+    void pushBoss();
 
 };
 

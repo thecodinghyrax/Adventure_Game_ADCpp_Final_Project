@@ -107,6 +107,7 @@ void Battle::playerAttack() {
 void Battle::playerDefend() {
 
     playerDefending = true;
+    enemyDefending = false;
 
 }
 

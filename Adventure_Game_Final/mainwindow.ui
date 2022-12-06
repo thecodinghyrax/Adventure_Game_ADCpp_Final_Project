@@ -879,8 +879,16 @@ color: rgb(0, 0, 0);</string>
         <x>20</x>
         <y>10</y>
         <width>761</width>
-        <height>111</height>
+        <height>221</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">
@@ -890,6 +898,9 @@ font: 20pt &quot;Planewalker&quot;;</string>
       </property>
       <property name="text">
        <string>Default Text</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -975,7 +986,7 @@ color: rgb(0, 0, 0);</string>
        <string>Defend</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="useItem">
+     <widget class="QPushButton" name="usePotion">
       <property name="geometry">
        <rect>
         <x>450</x>
@@ -991,7 +1002,7 @@ font: 16pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
-       <string>Use Item</string>
+       <string>Use Potion</string>
       </property>
      </widget>
      <widget class="QLabel" name="bkgLabel_2">
@@ -1033,7 +1044,7 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>460</x>
-        <y>140</y>
+        <y>240</y>
         <width>231</width>
         <height>51</height>
        </rect>
@@ -1076,7 +1087,7 @@ color: rgb(0, 0, 0);</string>
      <zorder>label_7</zorder>
      <zorder>defend</zorder>
      <zorder>attack</zorder>
-     <zorder>useItem</zorder>
+     <zorder>usePotion</zorder>
      <zorder>heavyAttack</zorder>
      <zorder>progressBar_2</zorder>
      <zorder>progressBar_3</zorder>
@@ -1093,7 +1104,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

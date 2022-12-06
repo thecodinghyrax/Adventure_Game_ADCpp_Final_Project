@@ -24,8 +24,6 @@ void Enemy::setDefense(int defense) {
 
 void Enemy::pushEnemies() {
 
-
-
     Enemy skeleton;
     skeleton.setId("S1");
     skeleton.setType("Skeleton");
@@ -40,4 +38,14 @@ void Enemy::pushEnemies() {
     bandit.setDefense(8);
     enemyVector.push_back(bandit);
 
+}
+
+void Enemy::pushBoss() {
+
+    Enemy vampire;
+    vampire.setId("V1");
+    vampire.setType("Vampire");
+    vampire.setHealth(400);
+    vampire.setDefense(10);
+    enemyVector.push_back(vampire);
 }

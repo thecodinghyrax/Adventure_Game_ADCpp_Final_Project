@@ -152,6 +152,7 @@ void MainWindow::on_pushButton_8_clicked()
     ui->descLabel->adjustSize();
     journal.push_back(camp);
     player.setPlayerHealth(100);
+    ui->currentHealthLabel->setText(QString::fromStdString(std::to_string(player.getPlayerHealth())));
 }
 
 // Attempts to access an area

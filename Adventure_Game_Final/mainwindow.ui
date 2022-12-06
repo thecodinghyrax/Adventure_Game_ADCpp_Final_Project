@@ -571,7 +571,7 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="startBattle">
       <property name="geometry">
        <rect>
-        <x>489</x>
+        <x>240</x>
         <y>550</y>
         <width>131</width>
         <height>24</height>
@@ -584,7 +584,7 @@ font: 16pt &quot;Planewalker&quot;;
 color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
-       <string>Start Battle</string>
+       <string>Find Enemy</string>
       </property>
      </widget>
     </widget>
@@ -682,7 +682,7 @@ color: rgb(0, 0, 0);</string>
        <pixmap resource="images.qrc">:/assets/bkg-end.png</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="endSceneText">
       <property name="geometry">
        <rect>
         <x>190</x>
@@ -1093,7 +1093,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

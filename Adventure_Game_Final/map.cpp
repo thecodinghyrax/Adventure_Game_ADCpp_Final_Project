@@ -122,7 +122,7 @@ void Map::addSearchItems(){
         if(mapData[i].getId() == "11"){
             mapData[i].setSearchItem(Item("Woodcutter's axe", "A well-worn axe, it still looks sharp enough to cut down a tree.", "noImage", false, 0));
         }
-        if(mapData[i].getId() == "39"){
+        if(mapData[i].getId() == "35"){
             mapData[i].setSearchItem(Item("Letter", "A hastily written letter which reads: \"Adventurer, beware the vampire who lies within this room! He cannot be killed by ordinary means. Make sure you are prepared before facing him!\"", "noImage", false, 0));
         }
     }

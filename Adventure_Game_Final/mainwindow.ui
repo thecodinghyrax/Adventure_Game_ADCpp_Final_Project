@@ -32,8 +32,9 @@
    <string>Adventure Game</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/assests/compass.png</normaloff>:/assests/compass.png</iconset>
+   <iconset resource="images.qrc">
+    <normaloff>:/assets/compass.png</normaloff>
+    <normalon>:/assets/compass.png</normalon>:/assets/compass.png</iconset>
   </property>
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
@@ -68,7 +69,7 @@
 background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="titleScreen">
      <widget class="QLabel" name="titleLabel">
@@ -435,7 +436,8 @@ color: rgb(0, 0, 0);</string>
        <string notr="true">
 color: rgb(255, 255, 255);
 background-color: rgba(50,50,50,185);
-font: 20pt &quot;Planewalker&quot;;</string>
+font: 20pt &quot;Planewalker&quot;;
+padding: 8px;</string>
       </property>
       <property name="text">
        <string>Adventurer, you have awoken in the middle of the night, startled by noise in the distance. You wait for a moment but there seems to be nothing there. Daylight is fast approaching. What is your command?</string>
@@ -450,10 +452,10 @@ font: 20pt &quot;Planewalker&quot;;</string>
      <widget class="QLabel" name="healthLabelDesc">
       <property name="geometry">
        <rect>
-        <x>122</x>
-        <y>514</y>
+        <x>525</x>
+        <y>484</y>
         <width>81</width>
-        <height>31</height>
+        <height>30</height>
        </rect>
       </property>
       <property name="font">
@@ -473,8 +475,8 @@ color: rgb(170, 0, 0);</string>
      <widget class="QLabel" name="currentHealthLabel">
       <property name="geometry">
        <rect>
-        <x>194</x>
-        <y>514</y>
+        <x>539</x>
+        <y>506</y>
         <width>51</width>
         <height>31</height>
        </rect>
@@ -496,8 +498,8 @@ color: rgb(255, 0, 0);</string>
      <widget class="QLabel" name="potionsLabelDesc">
       <property name="geometry">
        <rect>
-        <x>625</x>
-        <y>515</y>
+        <x>520</x>
+        <y>530</y>
         <width>81</width>
         <height>31</height>
        </rect>
@@ -519,8 +521,8 @@ color: rgb(0, 0, 255);</string>
      <widget class="QLabel" name="currentPotionsLabel">
       <property name="geometry">
        <rect>
-        <x>601</x>
-        <y>515</y>
+        <x>550</x>
+        <y>550</y>
         <width>21</width>
         <height>31</height>
        </rect>
@@ -542,10 +544,10 @@ color: rgb(0, 0, 255);</string>
      <widget class="QPushButton" name="invBtn">
       <property name="geometry">
        <rect>
-        <x>510</x>
-        <y>490</y>
-        <width>87</width>
-        <height>21</height>
+        <x>120</x>
+        <y>519</y>
+        <width>100</width>
+        <height>20</height>
        </rect>
       </property>
       <property name="font">

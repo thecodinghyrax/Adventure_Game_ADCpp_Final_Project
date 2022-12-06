@@ -53,7 +53,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
+      <y>0</y>
       <width>800</width>
       <height>600</height>
      </rect>
@@ -283,8 +283,8 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="pushButton_6">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>490</y>
+        <x>630</x>
+        <y>520</y>
         <width>71</width>
         <height>16</height>
        </rect>
@@ -360,8 +360,8 @@ background: transparent;</string>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>628</x>
-        <y>490</y>
+        <x>630</x>
+        <y>489</y>
         <width>71</width>
         <height>21</height>
        </rect>
@@ -571,8 +571,8 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="startBattle">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>550</y>
+        <x>112</x>
+        <y>488</y>
         <width>131</width>
         <height>24</height>
        </rect>

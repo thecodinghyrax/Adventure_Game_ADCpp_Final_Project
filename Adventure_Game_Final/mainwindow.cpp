@@ -33,7 +33,8 @@ void MainWindow::renderScene(Area current){
     ui->southBtn->setText("South");
     ui->westBtn->setText("West");
     ui->eastBtn->setText("East");
-
+    ui->currentPotionsLabel->setText(QString::fromStdString(std::to_string(player.getHealthPotions())));
+    ui->currentHealthLabel->setText(QString::fromStdString(std::to_string(player.getPlayerHealth())));
 };
 
 void MainWindow::on_beginButton_clicked()
@@ -215,7 +216,7 @@ void MainWindow::on_useBtn_clicked()
             return;
         }
         if (selectedItemName == "Raw fish" && current.getId() == "16"){
-            // TODO give player a potion
+            player.setHealthPotions(player.getHealthPotions() + 1);
             player.takeItem("Raw fish");
             current.setText("You use materials you find in the cottage and the fish to craft a disgusting but effective health potion.");
             journal.push_back(QString::fromStdString(current.getText()));

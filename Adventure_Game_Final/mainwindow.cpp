@@ -151,7 +151,7 @@ void MainWindow::on_pushButton_8_clicked()
     ui->descLabel->setText(camp);
     ui->descLabel->adjustSize();
     journal.push_back(camp);
-    // Health will be set back to 100
+    player.setPlayerHealth(100);
 }
 
 // Attempts to access an area
@@ -449,6 +449,7 @@ void MainWindow::on_leaveBattle_clicked()
 {
     if (ex.playerTempHP <= 0) {
         ui->stackedWidget->setCurrentIndex(3);
+        ui->endSceneText->setText("Unfortunately, you have met an untimely demise, and your adventure is over.");
     }
     else {
         ui->stackedWidget->setCurrentIndex(1);

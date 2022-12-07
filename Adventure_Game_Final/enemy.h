@@ -17,13 +17,15 @@ private:
     int defense;
     // vector holding weapons
     std::vector<Weapon> weaponVector;
-    // vector holding enemies
-    std::vector<Enemy> enemyVector;
 
 public:
     Enemy();
     Enemy(std::string id);
     Enemy(std::string id, std::string type, int health, int defense, std::vector<Weapon> weaponVector);
+
+    // vector holding enemies
+    std::vector<Enemy> enemyVector;
+
 
     std::string getId() {return id;}
     std::string getType() {return type;}
@@ -37,6 +39,7 @@ public:
     void setWeapons(std::vector<Weapon>);
 
     void pushEnemies();
+    void pushBoss();
 
 };
 

@@ -14,10 +14,6 @@ void Weapon::setType(std::string type) {
     this->type = type;
 }
 
-//void Weapon::setHitChance(int hitchance) {
-//    this->hitchance = hitchance;
-//}
-
 void Weapon::setDamage(int damage) {
     this->damage = damage;
 }
@@ -27,14 +23,24 @@ void Weapon::pushWeapons() {
 
     Weapon shortSword;
     shortSword.setId("S1");
-    shortSword.setType("Sword");
-    shortSword.setDamage(5);
+    shortSword.setType("Short Sword");
+    shortSword.setDamage(25);
     weaponVector.push_back(shortSword);
 
     Weapon shortBow;
     shortBow.setId("B1");
-    shortBow.setType("Bow");
-    shortBow.setDamage(4);
+    shortBow.setType("Short Bow");
+    shortBow.setDamage(20);
     weaponVector.push_back(shortBow);
+
+}
+
+void Weapon::pushBossWeapon() {
+
+    Weapon bloodMagic;
+    bloodMagic.setId("M1");
+    bloodMagic.setType("Blood Magic");
+    bloodMagic.setDamage(34);
+    weaponVector.push_back(bloodMagic);
 
 }

@@ -69,7 +69,7 @@
 background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="titleScreen">
      <widget class="QLabel" name="titleLabel">
@@ -283,8 +283,8 @@ color: rgb(100,10, 0);</string>
      <widget class="QPushButton" name="pushButton_6">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>490</y>
+        <x>630</x>
+        <y>520</y>
         <width>71</width>
         <height>16</height>
        </rect>
@@ -360,8 +360,8 @@ background: transparent;</string>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>628</x>
-        <y>490</y>
+        <x>630</x>
+        <y>489</y>
         <width>71</width>
         <height>21</height>
        </rect>
@@ -568,6 +568,25 @@ color: rgb(0, 0, 0);</string>
        <string>Inventory</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="startBattle">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>488</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Find Enemy</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="journal">
      <widget class="QLabel" name="label_5">
@@ -663,7 +682,7 @@ color: rgb(0, 0, 0);</string>
        <pixmap resource="images.qrc">:/assets/bkg-end.png</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="endSceneText">
       <property name="geometry">
        <rect>
         <x>190</x>
@@ -852,6 +871,227 @@ color: rgb(0, 0, 0);</string>
        <string>Use</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="battleSystem">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>761</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Planewalker</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(255, 255, 255);
+background-color: rgba(50,50,50,185);
+font: 20pt &quot;Planewalker&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Default Text</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>490</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bookman Old Style</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="format">
+       <string>%v</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="attack">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>470</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Attack</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="heavyAttack">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>470</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Heavy Attack</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="defend">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>520</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Defend</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="usePotion">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>520</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Use Potion</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bkgLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/assets/bkg-camp.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>460</y>
+        <width>611</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/assets/questPanel.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>240</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bookman Old Style</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="format">
+       <string>%v</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leaveBattle">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>493</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 0;
+background: transparent;
+font: 16pt &quot;Planewalker&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Leave</string>
+      </property>
+     </widget>
+     <zorder>bkgLabel_2</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>defend</zorder>
+     <zorder>attack</zorder>
+     <zorder>usePotion</zorder>
+     <zorder>heavyAttack</zorder>
+     <zorder>progressBar_2</zorder>
+     <zorder>progressBar_3</zorder>
+     <zorder>leaveBattle</zorder>
     </widget>
    </widget>
   </widget>

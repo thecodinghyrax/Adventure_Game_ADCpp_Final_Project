@@ -16,6 +16,10 @@ private:
     std::vector<Player> p;
     // Player item inventory
     std::vector<Item> inventory;
+    // Number of health potions
+    int healthPotions;
+    // holds player max health
+    int playerMaximumHP = 100;
 
 public:
     Player();
@@ -25,10 +29,12 @@ public:
     int getPlayerDefense() {return playerDefense;}
     int getWeaponDamage() {return pWeaponDamage;}
     std::vector<Item> getInventory() {return inventory;}
+    int getHealthPotions(){return healthPotions;}
 
     void setPlayerHealth(int);
     void setPlayerDefense(int);
     void setWeaponDamage(int);
+    void setHealthPotions(int);
 
     void pushPlayerStats();
 

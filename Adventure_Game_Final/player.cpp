@@ -2,9 +2,10 @@
 
 // Initialize new player
 Player::Player() {
-    this->playerHealth = 20;
+    this->healthPotions = 5;
+    this->playerHealth = 100;
     this->playerDefense = 10;
-    this->pWeaponDamage = 6;
+    this->pWeaponDamage = 34;
 }
 
 void Player::setPlayerHealth(int health) {
@@ -19,11 +20,15 @@ void Player::setWeaponDamage(int damage) {
     this->pWeaponDamage = damage;
 }
 
+void Player::setHealthPotions(int potions){
+    this->healthPotions = potions;
+}
+
 void Player::pushPlayerStats() {
     Player player;
-    player.setPlayerHealth(20);
+    player.setPlayerHealth(100);
     player.setPlayerDefense(10);
-    player.setWeaponDamage(6);
+    player.setWeaponDamage(34);
     p.push_back(player);
 }
 

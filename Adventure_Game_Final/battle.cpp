@@ -54,6 +54,14 @@ void Battle::setWeapon() {
     testWeapon = Battle::createWeapon();
 }
 
+void Battle::setEnemyType() {
+    enemyType = testEnemy.getType();
+}
+
+void Battle::setEnemyWeaponType() {
+    enemyWeaponType = testWeapon.getType();
+}
+
 void Battle::setPlayerTemp() {
     playerTempHP = testPlayer.getPlayerHealth();
     playerTempDef = testPlayer.getPlayerDefense();
@@ -62,6 +70,12 @@ void Battle::setPlayerTemp() {
 void Battle::setEnemyTemp() {
     enemyTempHP = testEnemy.getHealth();
     enemyTempDef = testEnemy.getDefense();
+}
+
+bool Battle::isEnemyDefending() {
+
+    return enemyDefending;
+
 }
 
 void Battle::playerAttack() {
@@ -76,6 +90,7 @@ void Battle::playerAttack() {
             // attack hits
             enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
         }
+        enemyDefending = false;
     }
     else {
         if (hitchance > testEnemy.getDefense()) {
@@ -91,7 +106,35 @@ void Battle::playerAttack() {
 
 void Battle::playerDefend() {
 
-    bool playerDefending = true;
+    playerDefending = true;
+    enemyDefending = false;
+
+}
+
+void Battle::playerHeavyAttack() {
+
+    int hitchance1 = (rand() % 20 + 1);
+    int hitchance2 = (rand() % 20 + 1);
+    int attack = testPlayer.getWeaponDamage() * 2;
+
+    if (enemyDefending) {
+
+        if (hitchance1 > (testEnemy.getDefense() * 2) || hitchance2 > (testEnemy.getDefense() * 2)) {
+
+            enemyTempHP = enemyTempHP - attack;
+
+        }
+
+        enemyDefending = false;
+
+    }
+    else {
+        if (hitchance1 > testEnemy.getDefense() || hitchance2 > testEnemy.getDefense()) {
+
+            enemyTempHP = enemyTempHP - attack;
+
+        }
+    }
 
 }
 
@@ -128,5 +171,6 @@ void Battle::enemyTurn() {
     }
 
 }
+
 
 

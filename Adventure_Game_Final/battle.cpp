@@ -2,7 +2,7 @@
 #include <ctime>
 
 Battle::Battle() {
-
+    srand(time(0));
 }
 
 void Battle::setEnemies(std::vector<Enemy> enemies) {
@@ -27,7 +27,6 @@ bool Battle::isWeaponsEmpty() {
 
 Enemy Battle::createEnemy() {
     if (!isEnemiesEmpty()) {
-        srand(time(0));
         return enemies[rand() % enemies.size()];
     }
     return Enemy();
@@ -35,7 +34,6 @@ Enemy Battle::createEnemy() {
 
 Weapon Battle::createWeapon() {
     if (!isWeaponsEmpty()) {
-        srand(time(0));
         return weapons[rand() % weapons.size()];
     }
     return Weapon();
@@ -79,29 +77,28 @@ bool Battle::isEnemyDefending() {
 }
 
 void Battle::playerAttack() {
+    if (playerTempHP > 0 && enemyTempHP > 0){
+        int hitchance = (rand() % 20 + 1);
 
-    srand(time(0));
-    int hitchance = (rand() % 20 + 1);
-
-    // checks if enemy is defending
-    if (enemyDefending) {
-        // checks if attack hits
-        if (hitchance > (testEnemy.getDefense() * 2)) {
-            // attack hits
-            enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
-        }
-        enemyDefending = false;
-    }
-    else {
-        if (hitchance > testEnemy.getDefense()) {
-            // attack hits
-            enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
+        // checks if enemy is defending
+        if (enemyDefending) {
+            // checks if attack hits
+            if (hitchance > (testEnemy.getDefense() * 2)) {
+                // attack hits
+                enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
+            }
+            enemyDefending = false;
         }
         else {
-            // attack misses or is blocked
+            if (hitchance > testEnemy.getDefense()) {
+                // attack hits
+                enemyTempHP = enemyTempHP - testPlayer.getWeaponDamage();
+            }
+            else {
+                // attack misses or is blocked
+            }
         }
     }
-
 }
 
 void Battle::playerDefend() {
@@ -112,64 +109,64 @@ void Battle::playerDefend() {
 }
 
 void Battle::playerHeavyAttack() {
+    if (playerTempHP > 0 && enemyTempHP > 0){
+        int hitchance1 = (rand() % 20 + 1);
+        int hitchance2 = (rand() % 20 + 1);
+        int attack = testPlayer.getWeaponDamage() * 2;
 
-    int hitchance1 = (rand() % 20 + 1);
-    int hitchance2 = (rand() % 20 + 1);
-    int attack = testPlayer.getWeaponDamage() * 2;
+        if (enemyDefending) {
 
-    if (enemyDefending) {
+            if (hitchance1 > (testEnemy.getDefense() * 2) || hitchance2 > (testEnemy.getDefense() * 2)) {
 
-        if (hitchance1 > (testEnemy.getDefense() * 2) || hitchance2 > (testEnemy.getDefense() * 2)) {
+                enemyTempHP = enemyTempHP - attack;
 
-            enemyTempHP = enemyTempHP - attack;
+            }
 
-        }
-
-        enemyDefending = false;
-
-    }
-    else {
-        if (hitchance1 > testEnemy.getDefense() || hitchance2 > testEnemy.getDefense()) {
-
-            enemyTempHP = enemyTempHP - attack;
+            enemyDefending = false;
 
         }
-    }
+        else {
+            if (hitchance1 > testEnemy.getDefense() || hitchance2 > testEnemy.getDefense()) {
 
+                enemyTempHP = enemyTempHP - attack;
+
+            }
+        }
+    }
 }
 
 void Battle::enemyTurn() {
-    srand(time(0));
-    int choice = (rand() % 10 + 1);
+    if (playerTempHP > 0 && enemyTempHP > 0){
+        int choice = (rand() % 10 + 1);
 
-    if (choice < 7) {
-        // enemy tries to hit the player
-        int hitchance = (rand() % 20 + 1);
+        if (choice < 7) {
+            // enemy tries to hit the player
+            int hitchance = (rand() % 20 + 1);
 
-        // checks if the player is defending
-        if (playerDefending) {
-            // if player is defending, check if the attack hits
-            if (hitchance > (testPlayer.getPlayerDefense() * 2)) {
-                // attack hits
-                playerTempHP = playerTempHP - testWeapon.getDamage();
+            // checks if the player is defending
+            if (playerDefending) {
+                // if player is defending, check if the attack hits
+                if (hitchance > (testPlayer.getPlayerDefense() * 2)) {
+                    // attack hits
+                    playerTempHP = playerTempHP - testWeapon.getDamage();
+                }
+                // player stops defending after attack
+                playerDefending = false;
             }
-            // player stops defending after attack
-            playerDefending = false;
+            else {
+                // checks if attack hits
+                if (hitchance > testPlayer.getPlayerDefense()) {
+                    // attack hits
+                    playerTempHP = playerTempHP - testWeapon.getDamage();
+                }
+            }
+
         }
         else {
-            // checks if attack hits
-            if (hitchance > testPlayer.getPlayerDefense()) {
-                // attack hits
-                playerTempHP = playerTempHP - testWeapon.getDamage();
-            }
+            // enemy tries to defend against the player's next attack
+            enemyDefending = true;
         }
-
     }
-    else {
-        // enemy tries to defend against the player's next attack
-        enemyDefending = true;
-    }
-
 }
 
 

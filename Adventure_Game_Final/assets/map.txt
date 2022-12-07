@@ -65,7 +65,7 @@ EnemyVectorWillGoHere
 11
 A Small Village
 You wander into a small local village. There are people about but everyone appears to be scared and no one will speak with you. Every person you approach quickly turns from you and shuts themselves indoors. Some even drop what they were carrying to flee. What happened to these people you wonder? Something has them spooked but you realize your not going to get any information here. 
-You have searched all around and found a woodcutter's axe dropped by one of the villagers. You figure you migth as well take this with you. You never know when an axe could come in handy.
+You have searched all around and found a woodcutter's axe dropped by one of the villagers. You figure you might as well take this with you. You never know when an axe could come in handy.
 :/assets/bkg-town.png
 EnemyVectorWillGoHere
 16,12,6,10

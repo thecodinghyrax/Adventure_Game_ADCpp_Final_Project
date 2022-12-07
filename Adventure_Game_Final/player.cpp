@@ -65,6 +65,7 @@ void Player::takeItem(std::string itemName){
         if (inventory[i].getName() == itemName){
             // Remove item at the i index
             inventory.erase(inventory.begin() + i);
+            return;
         }
     }
 }

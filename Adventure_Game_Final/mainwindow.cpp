@@ -295,6 +295,11 @@ void MainWindow::on_startBattle_clicked()
         testW.pushWeapons();
         ex.setEnemies(testE.enemyVector);
         ex.setWeapons(testW.weaponVector);
+        if (ui->progressBar_3->maximum() != 100) {
+
+            ui->progressBar_3->setMaximum(100);
+
+        }
 
     }
 

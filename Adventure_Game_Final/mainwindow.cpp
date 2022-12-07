@@ -142,6 +142,9 @@ void MainWindow::on_pushButton_7_clicked()
         current.setSearched(true);
         gameMap.setAreaSearched(current.getId());
     }
+    if(current.getId() == "16"){
+        player.setHealthPotions(player.getHealthPotions() + 4);
+    }
 }
 
 
